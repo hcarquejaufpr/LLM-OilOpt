@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "source_sha256": "3fa1ace47a210b8c8bcd1a8684e9d23a47ed2451bfa38cd8d1a9aa5aaef1ca74",
+  "T_days": 3600,
+  "units": {
+    "rate": "Sm3/day (deck METRIC m3/day)",
+    "FOPT_final": "Sm3"
+  },
+  "objective": "maximize FOPT_final",
+  "variable_wells": [
+    "INJECT3",
+    "INJECT6",
+    "INJECT7",
+    "INJECT8"
+  ],
+  "fixed_requested_rates": {
+    "INJECT1": 79.5,
+    "INJECT2": 79.5,
+    "INJECT4": 79.5,
+    "INJECT5": 79.5
+  },
+  "bounds": {
+    "INJECT3": [
+      59.5,
+      140.25
+    ],
+    "INJECT6": [
+      59.5,
+      118.35
+    ],
+    "INJECT7": [
+      59.5,
+      147
+    ],
+    "INJECT8": [
+      59.5,
+      112.5
+    ]
+  },
+  "capacity_total_requested": 636,
+  "pwl": {
+    "breakpoint": 79.5,
+    "scale_center": 70,
+    "scale_divisor": 20,
+    "coefficient_order": [
+      "intercept",
+      "linear_INJECT3",
+      "linear_INJECT6",
+      "linear_INJECT7",
+      "linear_INJECT8",
+      "hinge_INJECT3",
+      "hinge_INJECT6",
+      "hinge_INJECT7",
+      "hinge_INJECT8"
+    ],
+    "coefficients": [
+      499063.04360899975,
+      2012.2392131995075,
+      2471.909403072426,
+      2322.698923183303,
+      2367.2451130264903,
+      56.33204504838602,
+      -918.3392812581865,
+      -621.3112905924945,
+      -768.1173387678666
+    ],
+    "definition": "intercept + sum(linear_i*(q_i-70)/20 + hinge_i*max(0,(q_i-79.5)/20))"
+  },
+  "physical_note": "WBHP 420 bar is external validation. Requested may exceed realized WWIR; do not add WBHP to MILP."
+}
