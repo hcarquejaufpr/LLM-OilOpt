@@ -1,0 +1,485 @@
+{
+  "schema": "p2-v3-adjacent-segment-three-regime-milp",
+  "source": "shared/problema_p2_public.json",
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "runtime_data": "solve.py reads the public source JSON on each invocation",
+  "solver": "scipy.optimize.milp / HiGHS",
+  "objective": "maximize FOPT",
+  "epsilon": "FWIT <= CLI --epsilon",
+  "equations": {
+    "capacity": "sum(q_i) <= 636",
+    "Q": "20*Q = sum(q_i)-600",
+    "own_i": "20*own_i = q_i-80",
+    "real_i": "20*real_i = r_i-80",
+    "R": "R = sum(r_i)",
+    "Z": "20*Z = R-600",
+    "deficit": "public layer1_deficit_models only",
+    "FOPT": "public layer2.FOPT coefficients on real_i and Z2",
+    "FWIT": "public layer2.FWIT coefficients on Z"
+  },
+  "pwl": {
+    "method": "one selected adjacent segment; convex node weights",
+    "functions": [
+      "own2_INJECT3",
+      "Q2",
+      "Z2"
+    ]
+  },
+  "clip": {
+    "regimes": [
+      "d<=0 and r=q",
+      "0<=d<=q and r=q-d",
+      "d>=q and r=0"
+    ],
+    "big_m_formulae": "see formulacao.md",
+    "big_m_values": {
+      "INJECT1": {
+        "d_nonpositive_upper": 2.243320064458,
+        "d_interior_lower": 4.158623732287,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 83.658623732287,
+        "r_minus_q_both_directions": 79.5,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 4.158623732287,
+        "r_saturated_both_directions": 79.5
+      },
+      "INJECT2": {
+        "d_nonpositive_upper": 0,
+        "d_interior_lower": 0,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 79.5,
+        "r_minus_q_both_directions": 79.5,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 0,
+        "r_saturated_both_directions": 79.5
+      },
+      "INJECT3": {
+        "d_nonpositive_upper": 3.841545285355,
+        "d_interior_lower": 0.22799949676,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 140.47799949676,
+        "r_minus_q_both_directions": 140.25,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 0.22799949676,
+        "r_saturated_both_directions": 140.25
+      },
+      "INJECT4": {
+        "d_nonpositive_upper": 0,
+        "d_interior_lower": 0,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 79.5,
+        "r_minus_q_both_directions": 79.5,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 0,
+        "r_saturated_both_directions": 79.5
+      },
+      "INJECT5": {
+        "d_nonpositive_upper": 0,
+        "d_interior_lower": 0,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 79.5,
+        "r_minus_q_both_directions": 79.5,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 0,
+        "r_saturated_both_directions": 79.5
+      },
+      "INJECT6": {
+        "d_nonpositive_upper": 5.58293273824,
+        "d_interior_lower": 2.587521417103,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 120.937521417103,
+        "r_minus_q_both_directions": 118.35,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 2.587521417103,
+        "r_saturated_both_directions": 118.35
+      },
+      "INJECT7": {
+        "d_nonpositive_upper": 5.144797301615,
+        "d_interior_lower": 0.780976337499,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 147.780976337499,
+        "r_minus_q_both_directions": 147,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 0.780976337499,
+        "r_saturated_both_directions": 147
+      },
+      "INJECT8": {
+        "d_nonpositive_upper": 5.889184739362,
+        "d_interior_lower": 2.220448070776,
+        "d_minus_q_interior_upper": 0,
+        "d_minus_q_saturated_lower": 114.720448070776,
+        "r_minus_q_both_directions": 112.5,
+        "r_minus_q_plus_d_upper": 0,
+        "r_minus_q_plus_d_lower": 2.220448070776,
+        "r_saturated_both_directions": 112.5
+      }
+    }
+  },
+  "auxiliary_bounds_policy": "deficit_bounds derive Big-M only; realized_bounds impose no constraints",
+  "excluded_constraint": "WBHP",
+  "public_problem": {
+    "schema": "p2-public-problem-v3-semantic-closed",
+    "deficit_bounds_role": "deficit_bounds are auxiliary bounds supplied solely for deriving and validating valid Big-M constants for the exact clipping formulation. They MUST NOT be imposed as additional feasibility constraints on deficit_i.",
+    "realized_bounds_role": "realized_bounds are auxiliary bounds on r_i, supplied solely for deriving and validating Big-M constants. They MUST NOT be imposed as additional feasibility constraints on r_i.",
+    "feasible_set": "q_1 = 79.5; q_i within decision_variables.domains for i=2..8; sum(q) <= capacity_requested; FWIT <= epsilon_FWIT; r_i = q_i - clip(deficit_i, 0, q_i) with deficit_i computed from layer1_deficit_models. No other constraint exists. In particular deficit_bounds, realized_bounds and WBHP are not constraints.",
+    "architecture": "requested -> realized -> FOPT/FWIT",
+    "horizon_days": 3600,
+    "wells": [
+      "INJECT1",
+      "INJECT2",
+      "INJECT3",
+      "INJECT4",
+      "INJECT5",
+      "INJECT6",
+      "INJECT7",
+      "INJECT8"
+    ],
+    "decision_variables": {
+      "fixed": {
+        "INJECT1": 79.5
+      },
+      "domains": {
+        "INJECT2": [
+          34.5,
+          79.5
+        ],
+        "INJECT3": [
+          59.5,
+          140.25
+        ],
+        "INJECT4": [
+          34.5,
+          79.5
+        ],
+        "INJECT5": [
+          34.5,
+          79.5
+        ],
+        "INJECT6": [
+          59.5,
+          118.35
+        ],
+        "INJECT7": [
+          59.5,
+          147
+        ],
+        "INJECT8": [
+          59.5,
+          112.5
+        ]
+      },
+      "capacity_requested": 636
+    },
+    "normalized_features": {
+      "Q": "(sum_i q_i - 600)/20",
+      "own_i": "(q_i - 80)/20",
+      "Z": "(sum_i r_i - 600)/20",
+      "real_i": "(r_i - 80)/20"
+    },
+    "layer1_deficit_models": {
+      "INJECT1": {
+        "intercept": 1.1713666838726333,
+        "Q": 0.595529655325077
+      },
+      "INJECT2": {},
+      "INJECT3": {
+        "intercept": -0.015303143431095477,
+        "own": 0.19911165548663023,
+        "Q": -0.006664634656562543,
+        "own2": 0.17884392421295806,
+        "Q2": 0.019654062343378798
+      },
+      "INJECT4": {},
+      "INJECT5": {},
+      "INJECT6": {
+        "intercept": 1.237674360935837,
+        "own": 2.0895406180704765,
+        "Q": 0.1880912450856571
+      },
+      "INJECT7": {
+        "intercept": 0.5982398897849602,
+        "own": 1.3233182936757202,
+        "Q": -0.012674986258828236
+      },
+      "INJECT8": {
+        "intercept": 1.6365876680135958,
+        "own": 2.450483665840999,
+        "Q": 0.15031172964269102
+      }
+    },
+    "realized_definition": "r_i = q_i - clip(deficit_i, 0, q_i)",
+    "clip_requirement": "MILP-compatible exact 3-regime formulation of r_i = q_i - clip(deficit_i, 0, q_i). If Big-M is used, derive constants sufficient for every implication from deficit_bounds and the q domains (auxiliary, non-binding).",
+    "deficit_bounds": {
+      "INJECT1": [
+        -4.158623732287,
+        2.243320064458
+      ],
+      "INJECT2": [
+        0.0,
+        0.0
+      ],
+      "INJECT3": [
+        -0.22799949676,
+        3.841545285355
+      ],
+      "INJECT4": [
+        0.0,
+        0.0
+      ],
+      "INJECT5": [
+        0.0,
+        0.0
+      ],
+      "INJECT6": [
+        -2.587521417103,
+        5.58293273824
+      ],
+      "INJECT7": [
+        -0.780976337499,
+        5.144797301615
+      ],
+      "INJECT8": [
+        -2.220448070776,
+        5.889184739362
+      ]
+    },
+    "realized_bounds": {
+      "INJECT1": [
+        77.256679936542,
+        79.5
+      ],
+      "INJECT2": [
+        34.5,
+        79.5
+      ],
+      "INJECT3": [
+        55.658454715645,
+        140.25
+      ],
+      "INJECT4": [
+        34.5,
+        79.5
+      ],
+      "INJECT5": [
+        34.5,
+        79.5
+      ],
+      "INJECT6": [
+        53.91706726276,
+        118.35
+      ],
+      "INJECT7": [
+        54.355202699385,
+        147
+      ],
+      "INJECT8": [
+        53.610815261638,
+        112.5
+      ]
+    },
+    "pwl_functions": {
+      "own2_INJECT3": {
+        "argument": "own_INJECT3",
+        "nodes": [
+          -1.025,
+          -0.5763888888888999,
+          -0.1277777777777999,
+          0.3208333333333499,
+          0.7694444444444499,
+          1.2180555555555501,
+          1.66666666666665,
+          2.1152777777778,
+          2.5638888888888998,
+          3.0125
+        ],
+        "values": [
+          1.050625,
+          0.332224151235,
+          0.016327160494,
+          0.102934027778,
+          0.592044753086,
+          1.48365933642,
+          2.777777777778,
+          4.474400077161,
+          6.573526234568,
+          9.07515625
+        ]
+      },
+      "Q2": {
+        "argument": "Q",
+        "nodes": [
+          -8.95,
+          -8.461363636364,
+          -7.972727272727,
+          -7.484090909091,
+          -6.995454545455,
+          -6.506818181818,
+          -6.018181818182,
+          -5.529545454545,
+          -5.040909090909,
+          -4.552272727273,
+          -4.063636363636,
+          -3.575,
+          -3.086363636364,
+          -2.597727272727,
+          -2.109090909091,
+          -1.620454545455,
+          -1.131818181818,
+          -0.643181818182,
+          -0.154545454545,
+          0.334090909091,
+          0.822727272727,
+          1.311363636364,
+          1.8
+        ],
+        "values": [
+          80.1025,
+          71.594674586783,
+          63.564380165285,
+          56.011616735539,
+          48.936384297527,
+          42.338682851237,
+          36.218512396696,
+          30.575872933879,
+          25.410764462809,
+          20.723186983474,
+          16.513140495865,
+          12.780625,
+          9.52564049587,
+          6.74818698347,
+          4.44826446281,
+          2.625872933886,
+          1.281012396694,
+          0.41368285124,
+          0.023884297521,
+          0.111616735537,
+          0.676880165289,
+          1.719674586778,
+          3.24
+        ]
+      },
+      "Z2": {
+        "argument": "Z",
+        "nodes": [
+          -10.085089006201,
+          -9.589876964276,
+          -9.094664922351,
+          -8.599452880426,
+          -8.104240838501,
+          -7.609028796576,
+          -7.113816754651,
+          -6.618604712726,
+          -6.123392670801,
+          -5.628180628876,
+          -5.132968586951,
+          -4.637756545026,
+          -4.1425445031,
+          -3.647332461175,
+          -3.15212041925,
+          -2.656908377325,
+          -2.1616963354,
+          -1.666484293475,
+          -1.17127225155,
+          -0.676060209625,
+          -0.1808481677,
+          0.314363874225,
+          0.80957591615,
+          1.304787958075,
+          1.8
+        ],
+        "values": [
+          101.709020262996,
+          91.965740189951,
+          82.712930049842,
+          73.950589842667,
+          65.678719568427,
+          57.897319227123,
+          50.606388818753,
+          43.805928343319,
+          37.495937800819,
+          31.676417191255,
+          26.347366514626,
+          21.508785770931,
+          17.160674960164,
+          13.303034082341,
+          9.935863137453,
+          7.0591621255,
+          4.672931046482,
+          2.777169900399,
+          1.371878687251,
+          0.457057407038,
+          0.03270605976,
+          0.098824645418,
+          0.65541316401,
+          1.702471615538,
+          3.24
+        ]
+      }
+    },
+    "layer2": {
+      "FOPT": {
+        "equation": "intercept + sum(beta_i*real_i) + beta_Z2*PWL(Z^2)",
+        "coefficients": {
+          "intercept": 501555.5938340376,
+          "r1": -14719.837617462217,
+          "r2": 235.1707114443161,
+          "r3": 1599.6347095184774,
+          "r4": 318.9085949158334,
+          "r5": 570.0842702497193,
+          "r6": 1606.473270241966,
+          "r7": 1703.0746679149643,
+          "r8": 1783.656679566027,
+          "Z2": -167.73716538798362
+        },
+        "feature_definition": {
+          "real_i": "(r_i - 80)/20",
+          "Z": "(sum_i r_i - 600)/20",
+          "Z2": "PWL evaluated at Z using public Z2 nodes/values"
+        }
+      },
+      "FWIT": {
+        "equation": "intercept + beta_Z*Z",
+        "coefficients": {
+          "intercept": 2159936.0100392425,
+          "Z": 71980.73309472566
+        }
+      }
+    },
+    "optimization": {
+      "objective": "maximize FOPT",
+      "epsilon_constraint": "FWIT <= epsilon_FWIT",
+      "epsilon_candidates": [
+        {
+          "policy": "P1",
+          "epsilon_FWIT": 1512109.412187
+        },
+        {
+          "policy": "P2",
+          "epsilon_FWIT": 1728051.611471
+        },
+        {
+          "policy": "P3",
+          "epsilon_FWIT": 1943993.810755
+        },
+        {
+          "policy": "P4",
+          "epsilon_FWIT": 2159936.010039
+        },
+        {
+          "policy": "P5",
+          "epsilon_FWIT": 2289501.32961
+        }
+      ],
+      "pwl_method": "SOS2 or an exactly equivalent adjacent-segment MILP formulation"
+    },
+    "external_physical_validation": {
+      "WBHP_limit_bar": 420,
+      "role": "external only; do not add as a MILP constraint"
+    },
+    "supersedes_for_future_campaigns": "p2-public-problem-v2-corrected",
+    "historical_v1_immutable": true,
+    "methodological_note": "v3 for a separately authorized future campaign. v1 and v2 remain immutable historical evidence.",
+    "deficit_bounds_derivation": "Conservative interval arithmetic over the full feasible set (domains of q and sum(q)<=636), including the PWL value ranges. They are valid bounds, not constraints.",
+    "historical_v2_immutable": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "p2-v3-milp-implementation",
+  "source": "shared/problema_p2_public.json",
+  "entrypoint": "solve.py",
+  "solver": "scipy.optimize.milp / HiGHS",
+  "objective": {"sense": "maximize", "variable": "FOPT"},
+  "execution_parameter": "epsilon_FWIT",
+  "variables": {
+    "q_i": "public fixed value or public interval",
+    "Q": "requested total feature",
+    "own_i": "requested well feature",
+    "deficit_i": "layer 1 affine model including PWL terms for INJECT3",
+    "r_i": "realized well rate",
+    "R": "sum of realized rates",
+    "Z": "realized total feature",
+    "real_i": "realized well feature",
+    "FOPT": "public layer 2 objective",
+    "FWIT": "public layer 2 epsilon measure",
+    "lambda_and_segment": "adjacent-segment MILP for own2_INJECT3, Q2, Z2",
+    "clip_regime": "three binary selectors for each nonzero deficit model"
+  },
+  "constraints": [
+    "sum(q_i) <= capacity_requested",
+    "Q = (sum(q_i)-600)/20",
+    "own_i = (q_i-80)/20",
+    "deficit_i = layer1_deficit_models_i",
+    "r_i = q_i - clip(deficit_i, 0, q_i)",
+    "R = sum(r_i)",
+    "Z = (R-600)/20",
+    "real_i = (r_i-80)/20",
+    "FOPT = public layer2.FOPT",
+    "FWIT = public layer2.FWIT",
+    "FWIT <= epsilon_FWIT"
+  ],
+  "auxiliary_bounds": {
+    "deficit_bounds": "used solely to derive clipping Big-M constants; no explicit bound imposed",
+    "realized_bounds": "not needed for selected Big-M constants; no explicit bound imposed"
+  },
+  "excluded_constraint": "WBHP"
+}

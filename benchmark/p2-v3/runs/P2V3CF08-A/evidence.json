@@ -1,0 +1,276 @@
+{
+  "source": "shared/problema_p2_public.json",
+  "solver": "SciPy milp / HiGHS",
+  "results": [
+    {
+      "status": "optimal",
+      "epsilon_FWIT": 1512109.412187,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.092163944565144
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 57.907836055515006,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.092163944565144
+      },
+      "R": 420.00000000008015,
+      "FOPT": 478838.3535362523,
+      "FWIT": 1512109.412187,
+      "solver_gap": 0.0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "deficit": {
+        "INJECT1": -4.1409911717966645,
+        "INJECT2": 0.0,
+        "INJECT3": 1.5921639444849884,
+        "INJECT4": 0.0,
+        "INJECT5": 0.0,
+        "INJECT6": -2.581952373421628,
+        "INJECT7": -0.6450955177091575,
+        "INJECT8": -2.143443206755689
+      },
+      "Q": -8.920391802771743,
+      "Z": -8.999999999995993,
+      "PWL_Q2": 79.58698091144163,
+      "PWL_own2_INJECT3": 1.0506249999999997,
+      "PWL_Z2": 81.0379177619017,
+      "audit": {
+        "max_deficit_residual": 4.440892098500626e-16,
+        "max_clipping_residual": 7.105427357601002e-15,
+        "FOPT_residual": 0.0,
+        "FWIT_residual": 0.0,
+        "max_auxiliary_deficit_bound_violation": 0,
+        "max_auxiliary_realized_bound_violation": 0,
+        "requested_capacity_slack": 214.40783605543487
+      },
+      "policy": "P1"
+    },
+    {
+      "status": "optimal",
+      "epsilon_FWIT": 1728051.611471,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.9844035988742,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 58.847857045881,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.91011471084929,
+        "INJECT8": 107.74202824330067
+      },
+      "R": 480.0000000000309,
+      "FOPT": 491681.5387646246,
+      "FWIT": 1728051.611471,
+      "solver_gap": 0.0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "deficit": {
+        "INJECT1": -2.2385049988327714,
+        "INJECT2": 0.0,
+        "INJECT3": 0.6521429539214189,
+        "INJECT4": 0.0,
+        "INJECT5": 0.0,
+        "INJECT6": -1.9810738280271192,
+        "INJECT7": 0.07428888802491128,
+        "INJECT8": 4.757971756699341
+      },
+      "Q": -5.725779820056292,
+      "Z": -5.999999999998453,
+      "PWL_Q2": 32.84193386833999,
+      "PWL_own2_INJECT3": 1.0506249999999997,
+      "PWL_Z2": 36.04587978524005,
+      "audit": {
+        "max_deficit_residual": 2.220446049250313e-15,
+        "max_clipping_residual": 1.9758061853281106e-10,
+        "FOPT_residual": 0.0,
+        "FWIT_residual": 0.0,
+        "max_auxiliary_deficit_bound_violation": 0,
+        "max_auxiliary_realized_bound_violation": 0,
+        "requested_capacity_slack": 150.51559640112578
+      },
+      "policy": "P2"
+    },
+    {
+      "status": "optimal",
+      "epsilon_FWIT": 1943993.810755,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 135.12843608050946,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.38940193176828,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 130.8506498483452,
+        "INJECT8": 107.25994821987211
+      },
+      "R": 539.9999999999856,
+      "FOPT": 501313.86435013416,
+      "FWIT": 1943993.810755,
+      "solver_gap": 0.0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "deficit": {
+        "INJECT1": -0.328521321085443,
+        "INJECT2": 0.0,
+        "INJECT3": 0.11059806823171715,
+        "INJECT4": 0.0,
+        "INJECT5": 0.0,
+        "INJECT6": -1.3778272813128736,
+        "INJECT7": 4.277786232164262,
+        "INJECT8": 5.2400517801278905
+      },
+      "Q": -2.5185781959747153,
+      "Z": -3.00000000000091,
+      "PWL_Q2": 6.375646669932756,
+      "PWL_own2_INJECT3": 1.050625,
+      "PWL_Z2": 9.052191241487982,
+      "audit": {
+        "max_deficit_residual": 1.1218803663837207e-13,
+        "max_clipping_residual": 8.526512829121202e-14,
+        "FOPT_residual": -1.7462298274040222e-10,
+        "FWIT_residual": -1.3504177331924438e-08,
+        "max_auxiliary_deficit_bound_violation": 0,
+        "max_auxiliary_realized_bound_violation": 0,
+        "requested_capacity_slack": 86.37156391949054
+      },
+      "policy": "P3"
+    },
+    {
+      "status": "optimal",
+      "epsilon_FWIT": 2159936.010039,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 115.58717993921279,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.8049489557604,
+        "INJECT2": 34.5,
+        "INJECT3": 59.499999999999986,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 110.46606295138295,
+        "INJECT7": 141.97978968960444,
+        "INJECT8": 106.74919840318476
+      },
+      "R": 599.9999999999326,
+      "FOPT": 509075.0252478579,
+      "FWIT": 2159936.010039,
+      "solver_gap": 0.0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "deficit": {
+        "INJECT1": 1.6950510442396083,
+        "INJECT2": 0.0,
+        "INJECT3": -0.021676518021428767,
+        "INJECT4": 0.0,
+        "INJECT5": 0.0,
+        "INJECT6": 5.121116987829836,
+        "INJECT7": 5.020210310395569,
+        "INJECT8": 5.750801596815235
+      },
+      "Q": 0.8793589969606392,
+      "Z": -3.3704787414162806e-12,
+      "PWL_Q2": 0.7977374132114957,
+      "PWL_own2_INJECT3": 1.0506250000057213,
+      "PWL_Z2": 0.05685213064402124,
+      "audit": {
+        "max_deficit_residual": 2.3859456077524044e-12,
+        "max_clipping_residual": 1.4210854715202004e-14,
+        "FOPT_residual": 0.0,
+        "FWIT_residual": 0.0,
+        "max_auxiliary_deficit_bound_violation": 0,
+        "max_auxiliary_realized_bound_violation": 0,
+        "requested_capacity_slack": 18.412820060787226
+      },
+      "policy": "P4"
+    },
+    {
+      "status": "optimal",
+      "epsilon_FWIT": 2289501.32961,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 128.58693909521173,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478824,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.25667993654226,
+        "INJECT2": 34.5,
+        "INJECT3": 127.00380304070134,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478825,
+        "INJECT7": 141.99145880166728,
+        "INJECT8": 106.61081526163794
+      },
+      "R": 621.275817945337,
+      "FOPT": 511016.7262163001,
+      "FWIT": 2236508.4586840067,
+      "solver_gap": 1.2026239412761408e-15,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "deficit": {
+        "INJECT1": 2.2433200634577717,
+        "INJECT2": 0.0,
+        "INJECT3": 1.5831360545103885,
+        "INJECT4": 0.0,
+        "INJECT5": 0.0,
+        "INJECT6": -1.6653345369377348e-15,
+        "INJECT7": 5.008541198332732,
+        "INJECT8": 5.889184738362062
+      },
+      "Q": 1.8,
+      "Z": 1.0637908972668533,
+      "PWL_Q2": 3.240000000000006,
+      "PWL_own2_INJECT3": 5.943982101126042,
+      "PWL_Z2": 1.192916136370565,
+      "audit": {
+        "max_deficit_residual": 8.881784197001252e-16,
+        "max_clipping_residual": 2.842170943040401e-14,
+        "FOPT_residual": 0.0,
+        "FWIT_residual": 0.0,
+        "max_auxiliary_deficit_bound_violation": 0,
+        "max_auxiliary_realized_bound_violation": 0,
+        "requested_capacity_slack": 0.0
+      },
+      "policy": "P5"
+    }
+  ]
+}

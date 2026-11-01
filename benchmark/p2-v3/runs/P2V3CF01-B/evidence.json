@@ -1,0 +1,162 @@
+{
+  "schema": "p2-v3-evidence-1",
+  "requirements": {
+    "R01": {
+      "implementation": [
+        "solve.py:build q variables from decision_variables.fixed/domains"
+      ],
+      "evidence": [
+        "model.json:formulation.requested_domains",
+        "B/public_tdd.py fixed/domain assertions"
+      ]
+    },
+    "R02": {
+      "implementation": [
+        "solve.py:build capacity row on q"
+      ],
+      "evidence": [
+        "B/public_tdd.py sum(q) assertion"
+      ]
+    },
+    "R03": {
+      "implementation": [
+        "solve.py:build Q, own, real, R, Z equalities"
+      ],
+      "evidence": [
+        "B/public_tdd.py public FOPT recomputation",
+        "solve.py:audit features"
+      ]
+    },
+    "R04": {
+      "implementation": [
+        "solve.py:build deficit equalities from layer1_deficit_models"
+      ],
+      "evidence": [
+        "B/public_tdd.py independent deficit recomputation"
+      ]
+    },
+    "R05": {
+      "implementation": [
+        "solve.py:build three regime binaries and implications",
+        "solve.py:big_m/activated_equality"
+      ],
+      "evidence": [
+        "model.json:formulation.big_m_constants",
+        "B/public_tdd.py clipping assertion",
+        "solve.py:audit.max_realized_milp_difference"
+      ]
+    },
+    "R06": {
+      "implementation": [
+        "solve.py:Builder.pwl adjacent segment MILP for own2_INJECT3, Q2, Z2"
+      ],
+      "evidence": [
+        "model.json:public_data.pwl_functions",
+        "B/public_tdd.py interpolation of all three functions"
+      ]
+    },
+    "R07": {
+      "implementation": [
+        "solve.py:build R and Z equalities"
+      ],
+      "evidence": [
+        "B/public_tdd.py R assertion",
+        "solve.py:audit Z recomputation"
+      ]
+    },
+    "R08": {
+      "implementation": [
+        "solve.py:build FOPT/FWIT equalities from layer2 coefficients"
+      ],
+      "evidence": [
+        "B/public_tdd.py FOPT recomputation with (r_i-80)/20",
+        "solve.py:audit independent FOPT/FWIT recomputation"
+      ]
+    },
+    "R09": {
+      "implementation": [
+        "solve.py:build FWIT <= epsilon; solve minimizes -FOPT"
+      ],
+      "evidence": [
+        "B/public_tdd.py FWIT <= epsilon",
+        "five candidate solves optimal"
+      ]
+    },
+    "R10": {
+      "implementation": [
+        "solve.py:build does not read external_physical_validation"
+      ],
+      "evidence": [
+        "model.json:formulation.WBHP_as_constraint=false"
+      ]
+    },
+    "R11": {
+      "implementation": [
+        "formulacao.md",
+        "solve.py",
+        "model.json",
+        "evidence.json"
+      ],
+      "evidence": [
+        "all four files present"
+      ]
+    },
+    "R12": {
+      "implementation": [
+        "solve.py:main argparse --epsilon/--output and JSON writing"
+      ],
+      "evidence": [
+        "B/public_tdd.py subprocess interface test",
+        "result includes required audit fields"
+      ]
+    },
+    "R13": {
+      "implementation": [
+        "evidence.json requirement map"
+      ],
+      "evidence": [
+        "R01 through R15 entries present"
+      ]
+    },
+    "R14": {
+      "implementation": [
+        "solve.py reads only public problem and uses SciPy/HiGHS"
+      ],
+      "evidence": [
+        "no reference solution or OPM inputs in model"
+      ]
+    },
+    "R15": {
+      "implementation": [
+        "solve.py:interval_bounds validates deficit bounds; big_m uses deficit bounds and q domains; r and deficit variables have no auxiliary bounds"
+      ],
+      "evidence": [
+        "model.json:formulation.auxiliary_bounds_as_constraints=false",
+        "solve.py:build never accesses realized_bounds"
+      ]
+    }
+  },
+  "tests": {
+    "baseline": "python B/public_tdd.py failed before implementation: solve.py ausente",
+    "public_tdd": "python B/public_tdd.py -> PUBLIC_TDD_V3_PASS",
+    "all_public_epsilon_candidates": {
+      "command": "Python loop calling solve() for every optimization.epsilon_candidates entry",
+      "policies": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "statuses": [
+        "optimal",
+        "optimal",
+        "optimal",
+        "optimal",
+        "optimal"
+      ],
+      "max_solver_gap": 2.6674945665047456e-09,
+      "max_realized_milp_difference": 4.888534022029489e-12
+    }
+  }
+}

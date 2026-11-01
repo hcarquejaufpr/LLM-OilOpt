@@ -1,0 +1,110 @@
+{
+  "schema": "p2-v3-evidence-1",
+  "baseline": "python3 B/public_tdd.py failed before implementation: solve.py ausente",
+  "public_tdd": "python3 B/public_tdd.py -> PUBLIC_TDD_V3_PASS",
+  "independent_audit": "P1-P5 solve.py runs; recomputed clipping, FOPT, FWIT from public data and output; assertions <1e-6 clipping and <1e-5 FOPT/FWIT",
+  "candidate_results": [
+    {
+      "policy": "P1",
+      "status": "optimal",
+      "gap": 0.0,
+      "max_clip_error": 7.105427357601002e-15,
+      "FOPT_error": 5.820766091346741e-11,
+      "FWIT_error": 0.0
+    },
+    {
+      "policy": "P2",
+      "status": "optimal",
+      "gap": 0.0,
+      "max_clip_error": 0.0,
+      "FOPT_error": 5.820766091346741e-11,
+      "FWIT_error": 0.0
+    },
+    {
+      "policy": "P3",
+      "status": "optimal",
+      "gap": 2.0300091006331943e-10,
+      "max_clip_error": 0.0,
+      "FOPT_error": 1.1641532182693481e-10,
+      "FWIT_error": 0.0
+    },
+    {
+      "policy": "P4",
+      "status": "optimal",
+      "gap": 1.952134945055341e-09,
+      "max_clip_error": 4.547473508864641e-13,
+      "FOPT_error": 5.820766091346741e-11,
+      "FWIT_error": 9.313225746154785e-10
+    },
+    {
+      "policy": "P5",
+      "status": "optimal",
+      "gap": 1.11235926232183e-16,
+      "max_clip_error": 2.842170943040401e-14,
+      "FOPT_error": 1.1641532182693481e-10,
+      "FWIT_error": 0.0
+    }
+  ],
+  "requirement_map": {
+    "R01": {
+      "implementation": "solve.py:build q variables from decision_variables.fixed/domains",
+      "evidence": "public_tdd checks fixed INJECT1 and all requested domains"
+    },
+    "R02": {
+      "implementation": "solve.py:build sum(q) capacity row",
+      "evidence": "public_tdd checks sum(q)<=636"
+    },
+    "R03": {
+      "implementation": "solve.py:build exact Q, own, real, Z equalities",
+      "evidence": "independent audit recomputes Q, Z and layer2 from returned q/r"
+    },
+    "R04": {
+      "implementation": "solve.py:build layer1 model from public coefficient dictionaries",
+      "evidence": "independent audit recomputes all deficits and clipping for P1-P5"
+    },
+    "R05": {
+      "implementation": "solve.py:add_clip three binary regimes and big_m_values",
+      "evidence": "independent clipping residual for P1-P5; M formulas in formulacao.md and model.json"
+    },
+    "R06": {
+      "implementation": "solve.py:pwl adjacent-segment binary lambda formulation",
+      "evidence": "public_tdd and independent audit interpolate public nodes for own2, Q2, Z2"
+    },
+    "R07": {
+      "implementation": "solve.py:build R=sum(r), Z=(R-600)/20",
+      "evidence": "public_tdd checks R; independent audit recomputes Z"
+    },
+    "R08": {
+      "implementation": "solve.py:build FOPT/FWIT from layer2 coefficients and real_i",
+      "evidence": "public_tdd checks FOPT v3; independent audit recomputes FOPT and FWIT"
+    },
+    "R09": {
+      "implementation": "solve.py:build FWIT<=epsilon and maximize FOPT via scipy.optimize.milp",
+      "evidence": "P1-P5 solved optimal with returned solver gaps"
+    },
+    "R10": {
+      "implementation": "solve.py:build has no external_physical_validation or WBHP constraint",
+      "evidence": "source inspection and model.json WBHP_in_MILP=false"
+    },
+    "R11": {
+      "implementation": "formulacao.md, solve.py, model.json, evidence.json",
+      "evidence": "all four files present at /work root"
+    },
+    "R12": {
+      "implementation": "solve.py:argparse --epsilon/--output and JSON serialization",
+      "evidence": "public_tdd invoked interface successfully; P1-P5 smoke invocations succeeded"
+    },
+    "R13": {
+      "implementation": "evidence.json requirement_map",
+      "evidence": "maps R01-R15 including R01-R12"
+    },
+    "R14": {
+      "implementation": "solve.py loads only shared/problema_p2_public.json",
+      "evidence": "no reference solutions or OPM results used"
+    },
+    "R15": {
+      "implementation": "solve.py:build leaves deficit and realized variable bounds unrestricted; big_m_values reads deficit_bounds only for constants; realized_bounds is not read",
+      "evidence": "formulacao.md documents nonbinding auxiliary bounds; model.json auxiliary_bounds_are_constraints=false"
+    }
+  }
+}

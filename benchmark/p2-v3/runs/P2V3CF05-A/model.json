@@ -1,0 +1,120 @@
+{
+  "schema": "p2-v3-milp-audit-1",
+  "source": "shared/problema_p2_public.json",
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "objective": "maximize FOPT",
+  "constraint_set": [
+    "fixed and domain bounds on requested q",
+    "sum(q) <= capacity_requested",
+    "layer1 deficit equations",
+    "three-regime exact clipping equations",
+    "adjacent-segment PWL equations",
+    "layer2 FOPT and FWIT equations",
+    "FWIT <= epsilon_FWIT"
+  ],
+  "auxiliary_bounds_policy": {
+    "deficit_bounds": "Big-M constants only; no bounds on deficit variables",
+    "realized_bounds": "not imposed; no bounds on realized variables"
+  },
+  "implied_bounds_used": {
+    "realized": "0 <= r_i <= upper endpoint of requested q_i"
+  },
+  "pwl_encoding": "convex-combination lambdas with one selected adjacent segment per table",
+  "clip_encoding": "three binary regime indicators per well; one-hot; both sides of each equality linearized",
+  "big_m": {
+    "INJECT1": {
+      "low_d_upper": 2.243320064458,
+      "low_r_minus_q_upper": 0,
+      "low_r_minus_q_lower": 79.5,
+      "mid_d_lower": 4.158623732287,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 2.243320064458,
+      "mid_r_minus_q_plus_d_lower": 83.658623732287,
+      "high_q_minus_d_upper": 83.658623732287,
+      "high_r_upper": 79.5
+    },
+    "INJECT2": {
+      "low_d_upper": 0,
+      "low_r_minus_q_upper": 45.0,
+      "low_r_minus_q_lower": 79.5,
+      "mid_d_lower": 0,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 45.0,
+      "mid_r_minus_q_plus_d_lower": 79.5,
+      "high_q_minus_d_upper": 79.5,
+      "high_r_upper": 79.5
+    },
+    "INJECT3": {
+      "low_d_upper": 3.841545285355,
+      "low_r_minus_q_upper": 80.75,
+      "low_r_minus_q_lower": 140.25,
+      "mid_d_lower": 0.22799949676,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 84.591545285355,
+      "mid_r_minus_q_plus_d_lower": 140.47799949676,
+      "high_q_minus_d_upper": 140.47799949676,
+      "high_r_upper": 140.25
+    },
+    "INJECT4": {
+      "low_d_upper": 0,
+      "low_r_minus_q_upper": 45.0,
+      "low_r_minus_q_lower": 79.5,
+      "mid_d_lower": 0,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 45.0,
+      "mid_r_minus_q_plus_d_lower": 79.5,
+      "high_q_minus_d_upper": 79.5,
+      "high_r_upper": 79.5
+    },
+    "INJECT5": {
+      "low_d_upper": 0,
+      "low_r_minus_q_upper": 45.0,
+      "low_r_minus_q_lower": 79.5,
+      "mid_d_lower": 0,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 45.0,
+      "mid_r_minus_q_plus_d_lower": 79.5,
+      "high_q_minus_d_upper": 79.5,
+      "high_r_upper": 79.5
+    },
+    "INJECT6": {
+      "low_d_upper": 5.58293273824,
+      "low_r_minus_q_upper": 58.849999999999994,
+      "low_r_minus_q_lower": 118.35,
+      "mid_d_lower": 2.587521417103,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 64.43293273824,
+      "mid_r_minus_q_plus_d_lower": 120.937521417103,
+      "high_q_minus_d_upper": 120.937521417103,
+      "high_r_upper": 118.35
+    },
+    "INJECT7": {
+      "low_d_upper": 5.144797301615,
+      "low_r_minus_q_upper": 87.5,
+      "low_r_minus_q_lower": 147,
+      "mid_d_lower": 0.780976337499,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 92.644797301615,
+      "mid_r_minus_q_plus_d_lower": 147.780976337499,
+      "high_q_minus_d_upper": 147.780976337499,
+      "high_r_upper": 147
+    },
+    "INJECT8": {
+      "low_d_upper": 5.889184739362,
+      "low_r_minus_q_upper": 53.0,
+      "low_r_minus_q_lower": 112.5,
+      "mid_d_lower": 2.220448070776,
+      "mid_d_minus_q_upper": 0,
+      "mid_r_minus_q_plus_d_upper": 58.889184739362,
+      "mid_r_minus_q_plus_d_lower": 114.720448070776,
+      "high_q_minus_d_upper": 114.720448070776,
+      "high_r_upper": 112.5
+    }
+  },
+  "compiled_dimensions": {
+    "variables": 184,
+    "binary_variables": 79,
+    "linear_rows": 180
+  },
+  "solver": "SciPy scipy.optimize.milp / HiGHS"
+}

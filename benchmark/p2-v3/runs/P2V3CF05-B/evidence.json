@@ -1,0 +1,35 @@
+{
+  "schema": "p2-v3-sdd-evidence",
+  "source": "shared/problema_p2_public.json",
+  "baseline": {
+    "command": "python3 B/public_tdd.py",
+    "result": "failed before implementation: AssertionError: solve.py ausente"
+  },
+  "verification": {
+    "public_tdd": {
+      "command": "python3 B/public_tdd.py",
+      "result": "PUBLIC_TDD_V3_PASS"
+    },
+    "all_public_epsilons": {
+      "policies": ["P1", "P2", "P3", "P4", "P5"],
+      "result": "all five returned optimal with solver_gap 0.0; independent deficit and clipping audits below 4e-10"
+    }
+  },
+  "requirements": {
+    "R01": {"implementation": "solve.py: build creates q for all public wells from fixed/domains", "evidence": "public_tdd checks INJECT1 and all requested domains"},
+    "R02": {"implementation": "solve.py: capacity_requested constraint on sum(q)", "evidence": "public_tdd checks requested sum <= 636"},
+    "R03": {"implementation": "solve.py: Q, own, real and Z definition equalities", "evidence": "audit recomputes Q, Z and layer outputs; public_tdd checks FOPT with real_i=(r_i-80)/20"},
+    "R04": {"implementation": "solve.py: deficit definition assembled from layer1_deficit_models", "evidence": "audit independently recomputes each public deficit; all public epsilons passed"},
+    "R05": {"implementation": "solve.py: three binary clipping regimes and seven derived Big-M groups per modeled well", "evidence": "audit and public_tdd independently check r=q-clip(d,0,q); all public epsilons passed"},
+    "R06": {"implementation": "solve.py: Model.pwl uses exact public nodes, lambda and adjacent segment binaries for own2_INJECT3, Q2, Z2", "evidence": "public_tdd recomputes all three functions; all public epsilons passed"},
+    "R07": {"implementation": "solve.py: R and Z definition equalities", "evidence": "public_tdd checks R=sum(realized); audit recomputes Z"},
+    "R08": {"implementation": "solve.py: FOPT objective and audit from public real_i and Z2 coefficients; FWIT from public intercept and Z", "evidence": "public_tdd checks FOPT and FWIT; all public epsilons passed"},
+    "R09": {"implementation": "solve.py: objective maximizes FOPT and FWIT.epsilon takes CLI epsilon", "evidence": "all five public epsilon candidates solved optimal with gap 0.0"},
+    "R10": {"implementation": "solve.py: no WBHP constraint or reference", "evidence": "model.json excluded_constraints includes WBHP"},
+    "R11": {"implementation": "formulacao.md, solve.py, model.json, evidence.json", "evidence": "all four files created in workspace root"},
+    "R12": {"implementation": "solve.py: required --epsilon and --output; JSON includes status, epsilon_FWIT, requested, realized, R, FOPT, FWIT and solver_gap", "evidence": "public_tdd invokes CLI and validates output"},
+    "R13": {"implementation": "evidence.json maps R01–R15", "evidence": "this requirements object"},
+    "R14": {"implementation": "solve.py reads only shared/problema_p2_public.json and computes solutions with MILP", "evidence": "no reference solution or OPM data used"},
+    "R15": {"implementation": "solve.py: deficit variables unbounded; realized_bounds never imposed; deficit_bounds only feed Big-M calculation", "evidence": "formulacao.md derives every M; model.json lists auxiliary bounds only for Big-M and excludes both as feasibility constraints"}
+  }
+}

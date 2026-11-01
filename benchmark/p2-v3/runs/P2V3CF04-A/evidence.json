@@ -1,0 +1,204 @@
+{
+  "schema": "p2-v3-public-solve-evidence-v1",
+  "data_source": "shared/problema_p2_public.json",
+  "verification": "Independent recomputation of features, interpolated PWL values, deficits, clipping, FOPT, FWIT, requested capacity and epsilon budget from saved solver outputs.",
+  "solver": "SciPy milp / HiGHS",
+  "cases": {
+    "P1": {
+      "epsilon_FWIT": 1512109.412187,
+      "status": "optimal",
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.09216394456523
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 57.90783605551499,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.09216394456523
+      },
+      "R": 420.0000000000802,
+      "FOPT": 478838.3535362522,
+      "FWIT": 1512109.412187,
+      "solver_gap": 0.0,
+      "residuals": {
+        "Q": 1.7763568394002505e-15,
+        "Z": 3.552713678800501e-15,
+        "R": 0.0,
+        "capacity_violation": 0,
+        "FWIT_budget_violation": 0,
+        "deficit": 3.574918139293004e-14,
+        "clipping": 2.1316282072803006e-14,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 2.3283064365386963e-10
+      }
+    },
+    "P2": {
+      "epsilon_FWIT": 1728051.611471,
+      "status": "optimal",
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.98440359866389,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 58.847857046075966,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.91011471065276,
+        "INJECT8": 107.74202824330224
+      },
+      "R": 480.000000000031,
+      "FOPT": 491681.5387646235,
+      "FWIT": 1728051.611471,
+      "solver_gap": 0.0,
+      "residuals": {
+        "Q": 0.0,
+        "Z": 1.7763568394002505e-15,
+        "R": 0.0,
+        "capacity_violation": 0,
+        "FWIT_budget_violation": 0,
+        "deficit": 1.574296248918472e-13,
+        "clipping": 1.5631940186722204e-13,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 2.3283064365386963e-10
+      }
+    },
+    "P3": {
+      "epsilon_FWIT": 1943993.810755,
+      "status": "optimal",
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 135.12843608050554,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.38940193176818,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 130.85064984834153,
+        "INJECT8": 107.25994821987211
+      },
+      "R": 539.9999999999818,
+      "FOPT": 501313.86435013375,
+      "FWIT": 1943993.810755,
+      "solver_gap": 0.0,
+      "residuals": {
+        "Q": 2.220446049250313e-15,
+        "Z": 4.440892098500626e-16,
+        "R": 0.0,
+        "capacity_violation": 0,
+        "FWIT_budget_violation": 0,
+        "deficit": 1.7763568394002505e-15,
+        "clipping": 0.0,
+        "FOPT": 1.1641532182693481e-10,
+        "FWIT": 0.0
+      }
+    },
+    "P4": {
+      "epsilon_FWIT": 2159936.010039,
+      "status": "optimal",
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 115.58717993921299,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.80494895576038,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 110.46606295138312,
+        "INJECT7": 141.97978968960444,
+        "INJECT8": 106.74919840318476
+      },
+      "R": 599.9999999999327,
+      "FOPT": 509075.02524785785,
+      "FWIT": 2159936.010039,
+      "solver_gap": 0.0,
+      "residuals": {
+        "Q": 6.661338147750939e-16,
+        "Z": 5.348344856445982e-15,
+        "R": 0.0,
+        "capacity_violation": 0,
+        "FWIT_budget_violation": 0,
+        "deficit": 8.881784197001252e-16,
+        "clipping": 0.0,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 4.656612873077393e-10
+      }
+    },
+    "P5": {
+      "epsilon_FWIT": 2289501.32961,
+      "status": "optimal",
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 128.58693909521173,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478824,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.25667993654224,
+        "INJECT2": 34.5,
+        "INJECT3": 127.00380304070134,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478824,
+        "INJECT7": 141.99145880166728,
+        "INJECT8": 106.61081526163794
+      },
+      "R": 621.275817945337,
+      "FOPT": 511016.7262163,
+      "FWIT": 2236508.4586840062,
+      "solver_gap": 1.5339665598144602e-12,
+      "residuals": {
+        "Q": 0.0,
+        "Z": 3.552713678800501e-15,
+        "R": 0.0,
+        "capacity_violation": 0,
+        "FWIT_budget_violation": 0,
+        "deficit": 8.881784197001252e-16,
+        "clipping": 1.4210854715202004e-14,
+        "FOPT": 1.1641532182693481e-10,
+        "FWIT": 4.656612873077393e-10
+      }
+    }
+  },
+  "maximum_residual": 4.656612873077393e-10
+}

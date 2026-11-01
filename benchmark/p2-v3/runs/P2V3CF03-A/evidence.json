@@ -1,0 +1,281 @@
+{
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "command": "python3 solve.py --epsilon <valor> --output <arquivo.json>",
+  "results": [
+    {
+      "policy": "P1",
+      "result": {
+        "status": "optimal",
+        "epsilon_FWIT": 1512109.412187,
+        "solver_gap": 1.3777627124519829e-12,
+        "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "requested": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 59.5,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 59.5,
+          "INJECT8": 60.09216394183423
+        },
+        "realized": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 57.90783605546737,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 59.5,
+          "INJECT8": 60.09216394183423
+        },
+        "R": 419.9999999973016,
+        "FOPT": 478838.3535355926,
+        "FWIT": 1512109.4121769997,
+        "deficit": {
+          "INJECT1": -4.140991171877983,
+          "INJECT2": 0.0,
+          "INJECT3": 1.5921639445326257,
+          "INJECT4": 0.0,
+          "INJECT5": 0.0,
+          "INJECT6": -2.581952373447311,
+          "INJECT7": -0.6450955177074262,
+          "INJECT8": -2.143443207110816
+        },
+        "max_realized_residual": 2.7309638994665875e-09,
+        "FOPT_milp": 478838.35353625234,
+        "FWIT_milp": 1512109.412187,
+        "requested_total": 421.5921639418342
+      },
+      "checks": {
+        "status_optimal": true,
+        "requested_domains": true,
+        "capacity": true,
+        "epsilon": true,
+        "forward_vs_milp_FOPT": 6.597256287932396e-07,
+        "forward_vs_milp_FWIT": 1.0000308975577354e-05,
+        "forward_vs_milp_r": 2.7309638994665875e-09
+      }
+    },
+    {
+      "policy": "P2",
+      "result": {
+        "status": "optimal",
+        "epsilon_FWIT": 1728051.611471,
+        "solver_gap": 1.0826297452446175e-12,
+        "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "requested": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 59.5,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 70.98440359917507,
+          "INJECT8": 112.49999999630671
+        },
+        "realized": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 58.84785704603895,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 70.9101147111281,
+          "INJECT8": 107.74202824008539
+        },
+        "R": 479.9999999972524,
+        "FOPT": 491681.53876410035,
+        "FWIT": 1728051.6114609998,
+        "deficit": {
+          "INJECT1": -2.2385049989337835,
+          "INJECT2": 0.0,
+          "INJECT3": 0.6521429539610455,
+          "INJECT4": 0.0,
+          "INJECT5": 0.0,
+          "INJECT6": -1.9810738280590225,
+          "INJECT7": 0.07428888804696898,
+          "INJECT8": 4.7579717562213295
+        },
+        "max_realized_residual": 3.964572670156485e-09,
+        "FOPT_milp": 491681.53876463266,
+        "FWIT_milp": 1728051.611471,
+        "requested_total": 485.4844035954818
+      },
+      "checks": {
+        "status_optimal": true,
+        "requested_domains": true,
+        "capacity": true,
+        "epsilon": true,
+        "forward_vs_milp_FOPT": 5.323090590536594e-07,
+        "forward_vs_milp_FWIT": 1.00000761449337e-05,
+        "forward_vs_milp_r": 3.964572670156485e-09
+      }
+    },
+    {
+      "policy": "P3",
+      "result": {
+        "status": "optimal",
+        "epsilon_FWIT": 1943993.810755,
+        "solver_gap": 0.0,
+        "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "requested": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 59.5,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 135.1284360805055,
+          "INJECT8": 112.5
+        },
+        "realized": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 59.38940193176818,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 59.5,
+          "INJECT7": 130.8506498483415,
+          "INJECT8": 107.25994821987211
+        },
+        "R": 539.9999999999818,
+        "FOPT": 501313.86435013387,
+        "FWIT": 1943993.810755,
+        "deficit": {
+          "INJECT1": -0.3285213210854494,
+          "INJECT2": 0.0,
+          "INJECT3": 0.11059806823182403,
+          "INJECT4": 0.0,
+          "INJECT5": 0.0,
+          "INJECT6": -1.3778272813128756,
+          "INJECT7": 4.277786232164002,
+          "INJECT8": 5.24005178012789
+        },
+        "max_realized_residual": 4.263256414560601e-14,
+        "FOPT_milp": 501313.86435013387,
+        "FWIT_milp": 1943993.810755,
+        "requested_total": 549.6284360805055
+      },
+      "checks": {
+        "status_optimal": true,
+        "requested_domains": true,
+        "capacity": true,
+        "epsilon": true,
+        "forward_vs_milp_FOPT": 0.0,
+        "forward_vs_milp_FWIT": 0.0,
+        "forward_vs_milp_r": 4.263256414560601e-14
+      }
+    },
+    {
+      "policy": "P4",
+      "result": {
+        "status": "optimal",
+        "epsilon_FWIT": 2159936.010039,
+        "solver_gap": 6.092037557649725e-13,
+        "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "requested": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 59.5,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 115.58717993921336,
+          "INJECT7": 146.9999999968698,
+          "INJECT8": 112.5
+        },
+        "realized": {
+          "INJECT1": 77.80494895585358,
+          "INJECT2": 34.5,
+          "INJECT3": 59.5,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 110.4660629514129,
+          "INJECT7": 141.97978968667937,
+          "INJECT8": 106.74919840320828
+        },
+        "R": 599.9999999971541,
+        "FOPT": 509075.02524754783,
+        "FWIT": 2159936.0100289998,
+        "deficit": {
+          "INJECT1": 1.6950510441464202,
+          "INJECT2": 0.0,
+          "INJECT3": -0.021676518029335064,
+          "INJECT4": 0.0,
+          "INJECT5": 0.0,
+          "INJECT6": 5.1211169878004625,
+          "INJECT7": 5.02021031019044,
+          "INJECT8": 5.750801596791714
+        },
+        "max_realized_residual": 2.925418129962054e-09,
+        "FOPT_milp": 509075.02524785796,
+        "FWIT_milp": 2159936.010039,
+        "requested_total": 617.5871799360832
+      },
+      "checks": {
+        "status_optimal": true,
+        "requested_domains": true,
+        "capacity": true,
+        "epsilon": true,
+        "forward_vs_milp_FOPT": 3.1013041734695435e-07,
+        "forward_vs_milp_FWIT": 1.00000761449337e-05,
+        "forward_vs_milp_r": 2.925418129962054e-09
+      }
+    },
+    {
+      "policy": "P5",
+      "result": {
+        "status": "optimal",
+        "epsilon_FWIT": 2289501.32961,
+        "solver_gap": 4.122368542652945e-11,
+        "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "requested": {
+          "INJECT1": 79.5,
+          "INJECT2": 34.5,
+          "INJECT3": 128.58693929521178,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 64.91306090478821,
+          "INJECT7": 146.99999970000007,
+          "INJECT8": 112.5
+        },
+        "realized": {
+          "INJECT1": 77.25667993951987,
+          "INJECT2": 34.5,
+          "INJECT3": 127.0038032306143,
+          "INJECT4": 34.5,
+          "INJECT5": 34.5,
+          "INJECT6": 64.91306090478821,
+          "INJECT7": 141.99145852145375,
+          "INJECT8": 106.6108152623895
+        },
+        "R": 621.2758178587657,
+        "FOPT": 511016.726207039,
+        "FWIT": 2236508.4583724327,
+        "deficit": {
+          "INJECT1": 2.2433200604801247,
+          "INJECT2": 0.0,
+          "INJECT3": 1.5831360645974812,
+          "INJECT4": 0.0,
+          "INJECT5": 0.0,
+          "INJECT6": -9.404599321527485e-10,
+          "INJECT7": 5.008541178546338,
+          "INJECT8": 5.889184737610504
+        },
+        "max_realized_residual": 2.802135270485451e-07,
+        "FOPT_milp": 511016.726228105,
+        "FWIT_milp": 2236508.4593665292,
+        "requested_total": 635.9999999
+      },
+      "checks": {
+        "status_optimal": true,
+        "requested_domains": true,
+        "capacity": true,
+        "epsilon": true,
+        "forward_vs_milp_FOPT": 2.1065992768853903e-05,
+        "forward_vs_milp_FWIT": 0.0009940965101122856,
+        "forward_vs_milp_r": 2.802135270485451e-07
+      }
+    }
+  ]
+}

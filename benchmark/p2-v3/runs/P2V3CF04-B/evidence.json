@@ -1,0 +1,39 @@
+{
+  "source": "shared/problema_p2_public.json",
+  "baseline": {
+    "command": "python3 B/public_tdd.py",
+    "result": "failed before implementation: AssertionError: solve.py ausente"
+  },
+  "verification": {
+    "public_tdd": {"command": "python3 B/public_tdd.py", "result": "PUBLIC_TDD_V3_PASS"},
+    "all_public_epsilons": {
+      "command": "run solve.py once for each epsilon in optimization.epsilon_candidates",
+      "results": [
+        {"policy": "P1", "status": "optimal", "solver_gap": 0.0},
+        {"policy": "P2", "status": "optimal", "solver_gap": 0.0},
+        {"policy": "P3", "status": "optimal", "solver_gap": 0.0},
+        {"policy": "P4", "status": "optimal", "solver_gap": 0.0},
+        {"policy": "P5", "status": "optimal", "solver_gap": 0.0}
+      ]
+    },
+    "runtime_audit": "solve.py:audit independently recomputes public PWL, deficits, clipping, FOPT and FWIT from returned q and r, failing on inconsistency",
+    "auxiliary_bounds_check": "constructed model has infinite lower and upper bounds for every deficit_i and r_i; confirmed by Python inspection"
+  },
+  "requirements": {
+    "R01": {"implementation": "solve.py:construct; q domains read from decision_variables", "evidence": "public_tdd checks fixed INJECT1 and every public domain"},
+    "R02": {"implementation": "solve.py:construct; row sum(q) <= capacity_requested", "evidence": "public_tdd checks capacity"},
+    "R03": {"implementation": "solve.py:construct; equations for Q, own, Z and real", "evidence": "runtime_audit and public_tdd recompute normalized features"},
+    "R04": {"implementation": "solve.py:construct; deficit equations from layer1_deficit_models", "evidence": "public_tdd and runtime_audit independently recompute deficits"},
+    "R05": {"implementation": "solve.py:clip; three binary regimes and derived Big-M", "evidence": "formulacao.md clipping table and Big-M derivation; public_tdd and runtime_audit check exact clipping"},
+    "R06": {"implementation": "solve.py:pwl; lambda and adjacent segment binaries for all three public functions", "evidence": "formulacao.md PWL equations; public_tdd interpolates public nodes in objective and deficit"},
+    "R07": {"implementation": "solve.py:construct; R=sum(r), 20Z=R-600", "evidence": "public_tdd checks R; runtime_audit recomputes Z"},
+    "R08": {"implementation": "solve.py:construct; FOPT and FWIT equations using public layer2 coefficients", "evidence": "public_tdd independently checks FOPT; runtime_audit checks both"},
+    "R09": {"implementation": "solve.py:construct; FOPT maximized and FWIT constrained by CLI epsilon", "evidence": "all five public epsilon candidates solved to optimality with zero reported gap"},
+    "R10": {"implementation": "solve.py:construct; no WBHP variable or constraint", "evidence": "model.json constraint inventory; code inspection"},
+    "R11": {"implementation": "formulacao.md, solve.py, model.json, evidence.json", "evidence": "all four files delivered at /work"},
+    "R12": {"implementation": "solve.py:main; --epsilon and --output arguments, JSON output", "evidence": "public_tdd invokes CLI and checks required keys"},
+    "R13": {"implementation": "evidence.json:requirements", "evidence": "mapping includes R01 through R12 and R13 through R15"},
+    "R14": {"implementation": "solve.py reads only public JSON and contains no reference or OPM data", "evidence": "source inspection; all reported outcomes computed by MILP"},
+    "R15": {"implementation": "solve.py:clip uses deficit_bounds only as numeric Big-M inputs; no deficit or realized bounds are imposed", "evidence": "formulacao.md derivation; auxiliary_bounds_check"}
+  }
+}

@@ -60,6 +60,501 @@
     "sha256": "6dff9fc3ed9045eaaf8a34f1e16c953ad473a2f293ea385f7d4494bf3c6020ee"
   },
   {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/MATRIZ_EXECUCAO_P2_V3.csv",
+    "file": "benchmark/p2-v3/MATRIZ_EXECUCAO_P2_V3.csv",
+    "sha256": "14cba56cb255f1520ea21a4e2ced883826e933c9337ed7cc5400404274bf06fd"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/ANALISE_M1_M4_P2_V3/RELATORIO_M1_M4_P2_V3.md",
+    "file": "benchmark/p2-v3/ANALISE_M1_M4_P2_V3/RELATORIO_M1_M4_P2_V3.md",
+    "sha256": "40199a3ed70107791dc05777107f6fe0211be8686c49d00717051e5a9fb811ad"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/MANIFESTO_PROVENIENCIA_P2_V3.json",
+    "file": "benchmark/p2-v3/MANIFESTO_PROVENIENCIA_P2_V3.json",
+    "sha256": "a77444157b87af319ae95f64a905da1f222ae1a460d11486a9fc727be18fbf6e"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-A/formulacao.md",
+    "sha256": "50db30c375fc9924c7e71139b8199e4a8a2e695b1e7c44022f85dbf308c110fc"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-A/model.json",
+    "sha256": "77507f6568f2fdb52f748127e3de8f5d275eb62d5641b8481e55bf5e5d0cab9b"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-A/solve.py",
+    "sha256": "a717302fb486aad1891439edee46f09864ae210e998fadaae49fe878786f51ce"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-A/evidence.json",
+    "sha256": "1b32c1cb63a9b67bc635874ba7c3504efc0d6a894638c84215b9f564e159bfa5"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-A/execution_receipt.json",
+    "sha256": "6cf3c3ec323adc0724a7337ecad28f3dc30fcba6cf5410543997f8a2c565dc62"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-B/formulacao.md",
+    "sha256": "58d889ac14781d26f058326e5ab02a04b418ba37af430e77f0cd2e29c392294c"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-B/model.json",
+    "sha256": "40858bc762e67a528a6f76d943099876df7c18845b8c6c624398c62f22e5d3bd"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-B/solve.py",
+    "sha256": "82f87df63232fcbf6d3a90b166c82dcde01a4b7baa2d6e148041528005ec6819"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-B/evidence.json",
+    "sha256": "65f944ebd05edcfa76d121937c21af0edabd1677afa48c733f1deec55beb00ca"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF01-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF01-B/execution_receipt.json",
+    "sha256": "45032781dfefbdae56492f544d873d6f18f58288d540434800c0493b3b290bba"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-A/formulacao.md",
+    "sha256": "d0805b1df6af102339907b298ab873362b069e93e85bcf34eefd28fb5ef9d6df"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-A/model.json",
+    "sha256": "1bbf64b8f6d6bcf911e47b10771f823d6048a68c5da3872d2bf44bd1742cbf2d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-A/solve.py",
+    "sha256": "1e835bb39f96006d476d94935aa2f7f8acb8732dd7ab186802fa60605248c8be"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-A/evidence.json",
+    "sha256": "210b05821735842ccaf0f44a510bb0bd67f23bd34e499d3532a2987603a932f4"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-A/execution_receipt.json",
+    "sha256": "112c5337f2aa9ecb1f29718ffd1e535992bc5821d0664b78fbf9e32ee6f74c3d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-B/formulacao.md",
+    "sha256": "c6181f495bb7cfd69ad857bd4158e864e0859ef660cbf2a3016d687231610cd9"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-B/model.json",
+    "sha256": "b3a52f5be00652fe62ab6b333fa8ae546a13b7b5ad309b3d0f5c67005bb5b8b1"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-B/solve.py",
+    "sha256": "4dd6f0ad0072943062073720a90fd14d06e824c054740e4daa00676e4268d7c2"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-B/evidence.json",
+    "sha256": "2151e12a21b51c134236bf022bdcb771fa3fc477289312cd73f2b8b2cbb69003"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF02-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF02-B/execution_receipt.json",
+    "sha256": "ce432649190485bfc3271a72e584dd80297f796ee43947626189f37f601e624c"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-A/formulacao.md",
+    "sha256": "9b70ada7fca4daade2132b65997ac7f010bd2ad29162754f56d9c8aef13efe64"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-A/model.json",
+    "sha256": "eaed1f1550090a7ca710b8733151e8fcea5b88fea8addf8d107fcecb9892acaa"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-A/solve.py",
+    "sha256": "00e669caad523e298a17083892c5c0056c4ff6e527d34decd012395164d81f33"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-A/evidence.json",
+    "sha256": "bf25b7ecbc2dfd9280fb1b2f9b693d3e6be34d7ca11d273d62c579fc9db26312"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-A/execution_receipt.json",
+    "sha256": "be33a2861f97fb1bc199d35d5e8b682351bde39792ea011690ab39270ae4e8f2"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-B/formulacao.md",
+    "sha256": "e8218057137a123a86cc75b53d1123faf4d71066e5761fd767f9f65b69b15c3f"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-B/model.json",
+    "sha256": "b09eb34aa2ecc028b25817e4aaf1cb7a399090fa94208c8f87957d0bda7c3b52"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-B/solve.py",
+    "sha256": "fe36fbefe4c52aca2e47a163a08e3c2cf298917b3de8af48b5c52e13a105495d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-B/evidence.json",
+    "sha256": "2dc1cbcd21afb094f604481d83ac365cb3a953c3b9d3ee21adc207312ae03238"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF03-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF03-B/execution_receipt.json",
+    "sha256": "9960d34d9da1e0a2acb033f62ff728f7069651df6787b3e79e46d2100809a216"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-A/formulacao.md",
+    "sha256": "fcf301e358a41b1d997f4ebf17c36b7b49a694bc9eadfd1772516f72bc7e6ea8"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-A/model.json",
+    "sha256": "34252b5564136865d073f7c381b79af9dd10a1421ba5db801ce7c7095a00a63d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-A/solve.py",
+    "sha256": "b3526c247d08242e5f8b4b21adb974b96081db4aa6894338089785445271f98c"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-A/evidence.json",
+    "sha256": "a6f95f4d353dbe2e724447bb0b5b16c5a870f64d780d79f10ee8b625ebfc7367"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-A/execution_receipt.json",
+    "sha256": "810b73fa418279c18616eb3024fd7ad4ed5ead54ef0f2abe9eacf676b26052b0"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-B/formulacao.md",
+    "sha256": "bc5fc35640d02cf2c2e89f2deccfe6d96f826dbc851e8afe749f1e628221827f"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-B/model.json",
+    "sha256": "6f1d31a2ae2312de0e41765d320f4e5edb342a074e05288936804309bc002bc8"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-B/solve.py",
+    "sha256": "29364720a506b13be7fdf6015c50f3adc3dd05d13aff5044b5710d5f65b5c18d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-B/evidence.json",
+    "sha256": "6009bd62fe04ebb44e998c2cb0b8b2578a0a3bd98c463c14a72847fb7c6f8925"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF04-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF04-B/execution_receipt.json",
+    "sha256": "651c85721b6496b14a258d90aaa84b84663f446aecfaa4db792e9b2f7986cffe"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-A/formulacao.md",
+    "sha256": "ba24f1b5c18a777cb5d1c8ad46c9b8f96b2f2c71b091aa4cd53076c2b7829dc1"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-A/model.json",
+    "sha256": "f2565f77b3f4f681e9073741b2d638fd575f681b61e68f19dba1908499bc8c06"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-A/solve.py",
+    "sha256": "78ffe75f9f3a1133bc9df8243d45c001ab483a2b098d8761c421ea87fee4254d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-A/evidence.json",
+    "sha256": "791b671d96b76ac20b95e2818118cac8deaefa1fe6408f33970001099e79c3a0"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-A/execution_receipt.json",
+    "sha256": "a0c7d1ccb72999cbcb4ea5f3e07895d3d28a20cbb2d10cb7e98604df599b3135"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-B/formulacao.md",
+    "sha256": "61c56fbb76e35b7eccd1cb67b6c1c227da7607091b866591f9d53166c8676939"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-B/model.json",
+    "sha256": "2ec71cbcead29db27c4485bb6e9b1c0133ad9a64c6a9c62397b79515c577ecf7"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-B/solve.py",
+    "sha256": "bd6ecef66301826a267cd00f8702c3bc1e99e1e0694dafa4fac990d3a45d86df"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-B/evidence.json",
+    "sha256": "dd9e9a19c4ca8f2333e4052b10e9ebccdb9ec75c9c50fc27606dbc3cca4a3b02"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF05-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF05-B/execution_receipt.json",
+    "sha256": "77ea100d7a968f94039a7f41fd0bf5913b3cd172df04ebb8c4c24dd166cb315d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-A/formulacao.md",
+    "sha256": "e94a62df128f80e2825473ac8ff61b37d098bdba20ca2284a1fdb985922aec2e"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-A/model.json",
+    "sha256": "04995f1d890f22bf7a14fb55cfd2cbbe6fcdec182d2b0ccd2afdafc8092d434f"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-A/solve.py",
+    "sha256": "d1904109e8a62d86d6cf5b7379135aa225183d355157503611e0dc5bdceb028a"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-A/evidence.json",
+    "sha256": "b26a0a2b4324ace8e6f3d84f95a68096f858d838816ea0328f8d035f9088eefa"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-A/execution_receipt.json",
+    "sha256": "dc1c6ab4b7a830161811e78dd3815f2c29343ae02ac0cf19c52b6411e50c3294"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-B/formulacao.md",
+    "sha256": "d1f78d415f075ca74ac65415431150ad8d3449ff717b33d984cef2228a19afd1"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-B/model.json",
+    "sha256": "22e835ca35b815a7dff0dc111e70e04b3f68d457fa4b2975c79e8565dc3905f3"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-B/solve.py",
+    "sha256": "392f230f586afa78298ce1e09b4d5e14cede667ceadffa736fb2c65b9c2b7739"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-B/evidence.json",
+    "sha256": "2d98975b0e9e8e1a7f0780ec72686bd5921fd2e068d24ddd023a64840b5f0cf9"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF06-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF06-B/execution_receipt.json",
+    "sha256": "41885e99b2af1af88b155cac52c275b5355b4687c262aae2b10334b2bacf8dd1"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-A/formulacao.md",
+    "sha256": "549455d6264460e1f73d8a76abf4ccd1b76cf6781355b7e02b9d21d03e537462"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-A/model.json",
+    "sha256": "d0910fdde7c0f8e76506b0dbe8d7e5437b42a126e404dfe29f3b3697f7747242"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-A/solve.py",
+    "sha256": "28e8bb178f36ca1f37e6774babfc6cf8457a8d5a11ce04315ad8e3258189498b"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-A/evidence.json",
+    "sha256": "74ade75ebae271b42cedeb0d4bde6c003fa158c39c7bb5edf8cf757597740315"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-A/execution_receipt.json",
+    "sha256": "2aa6b86c9be13908ae5cd47817d5fa7e47bdd5b57bb890d12556b9a8c1a4d39b"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-B/formulacao.md",
+    "sha256": "f4fbcbcc49bad91b179e9458dd404175bc128b87c153d68f3e61aa6870524406"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-B/model.json",
+    "sha256": "dbd882b38feab6f229ff023c902d536fdbcad1e4ad8eaa38de907611e58f3b67"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-B/solve.py",
+    "sha256": "91dfb5c7854e89d19f4064fff0b7fe85e3a5b7f9b619d4554adc0d41c30e7ebb"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-B/evidence.json",
+    "sha256": "25dd65f1f25dbe78e1091e1e454e8c0fd623e2f0af3d44d713ee8383908ba67a"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF07-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF07-B/execution_receipt.json",
+    "sha256": "e239bd28b5af4fdf1ae2f1c235f685d0a588fc41aae5c9d3651e7ee39701d585"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-A/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-A/formulacao.md",
+    "sha256": "586f97d1d7b994b34a96ac4038f8b8afded3d4f0e25b52d6a6583b191ff82e5f"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-A/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-A/model.json",
+    "sha256": "200a56c9fe8cff4a776ab2e9ed9776b93d899ebb5bbafe147872d535d4640560"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-A/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-A/solve.py",
+    "sha256": "bac928b3dc6978cebe784580e375855e6ce2d9b76978a3871620638b51b8f8ec"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-A/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-A/evidence.json",
+    "sha256": "c1d31246b4d9cc48a4b4a01441a18b9fe641ba2ec698a3f5cb9aca1872a7f1bb"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-A/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-A/execution_receipt.json",
+    "sha256": "d36b9535223f2acf1a3519255db7a23c229b0f80cb0a57f89edb1d67456668d5"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-B/formulacao.md",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-B/formulacao.md",
+    "sha256": "81ae4f8abd31429a87af789a36e760c67300178928e9cfb6a58dd8db6b2b6a14"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-B/model.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-B/model.json",
+    "sha256": "547ddd20a998df1f2b861f07690e569ec8b771a7279eb48f4b784fefd0a5b32e"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-B/solve.py",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-B/solve.py",
+    "sha256": "e25e0e7afd5b4d72f83c0d44baed2e60ee56d48587d0af4d24bd75e662dcf49a"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-B/evidence.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-B/evidence.json",
+    "sha256": "9e08e4da4e4d8d627b0a6b921019a505dae049c41e44aa1e669d0309c53ee244"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/runs/P2V3CF08-B/execution_receipt.json",
+    "file": "benchmark/p2-v3/runs/P2V3CF08-B/execution_receipt.json",
+    "sha256": "daf8ac7227282d73e5a75ca7eb78a68c567bbdb0e83ca2581056d30482758f84"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C01/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C01/ficha.json",
+    "sha256": "0ace0b1849177b26992f97e9d31cd95a5a4da10c2c123ffe4ca5e541bcc26306"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C02/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C02/ficha.json",
+    "sha256": "bc09033efc1d15e7756830576cb0fa3638153daa5775a7d8cff6738f17b4038b"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C03/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C03/ficha.json",
+    "sha256": "fee37e73bdf955d40ab5023672b70eae98c3b4b7bc879403cbf20ead497dacf8"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C04/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C04/ficha.json",
+    "sha256": "b17bacab836ce80e925e9c9469b31fb2ea819a7cc9ac71fe58c211562a5b78d3"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C05/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C05/ficha.json",
+    "sha256": "3e7cbc858ddbf790e13111f5e3f9af454a3470413af5ca4dd2fd532d9b214d5d"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C06/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C06/ficha.json",
+    "sha256": "f61f5e99b276fe5dc712b6d163542007fd1d803ed027cf1288489460bfb29a5f"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C07/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C07/ficha.json",
+    "sha256": "6342dd59bae9e7fa714ad909f95ac4bd7213ec52e74fbdedc6d73587869a758a"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C08/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C08/ficha.json",
+    "sha256": "cc5298ea612d194f931f1a4abd34dc894e1feac3c6f50723b4a94116d13a882e"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C09/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C09/ficha.json",
+    "sha256": "779bca902d01d7f4608e53902b5ed718b0feb5b1e599d3c15101bc28beb012fe"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C10/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C10/ficha.json",
+    "sha256": "da8aa395ee1003670e6c4b1b01a6de5b035e25aea8d178e380fb12bd75b5b754"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C11/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C11/ficha.json",
+    "sha256": "69e104c20136c91a9080e3dfd5021d33c32d6cd5f043e25e9f788c4ea7276ad9"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C12/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C12/ficha.json",
+    "sha256": "e45b902ca5b58c4ae552541593a2a6f7b02f8371de9366bad48f1ba7f12e1032"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C13/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C13/ficha.json",
+    "sha256": "8b9b342e568d5139a49ce4fd2bcf3fde3fd1c7ca23d4d52f5ad82b2110e29585"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C14/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C14/ficha.json",
+    "sha256": "55422132619c553f6d3c694e43e3a29813b03c85d9de30eee79f340e610ec4d1"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C15/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C15/ficha.json",
+    "sha256": "5669f34e714f139277265398db2df6f9d4bbe0ca5672591261aef8154f459c2c"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C16/ficha.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/P2V3-C16/ficha.json",
+    "sha256": "d3362fd77df85513c4e02bf9db506958ff26138e1844841c37c181024a76bc16"
+  },
+  {
     "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/RESULTADOS_CONSOLIDADOS.json",
     "file": "validation/p2-v3/RESULTADOS_CONSOLIDADOS.json",
     "sha256": "30f101d23058f303d950080b3a2bc7c9586064ca048b495aa9b74b50b7400202"

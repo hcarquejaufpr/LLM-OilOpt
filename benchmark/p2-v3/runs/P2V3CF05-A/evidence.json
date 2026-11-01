@@ -1,0 +1,164 @@
+{
+  "schema": "p2-v3-execution-evidence-1",
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "command_template": "python3 solve.py --epsilon <epsilon_FWIT> --output <arquivo.json>",
+  "audit_method": "Independent direct evaluation of normalized features, interpolated public PWL tables, layer1 deficits, clipping, FOPT, FWIT, requested domains, capacity and budget.",
+  "tolerance": 1e-05,
+  "runs": [
+    {
+      "policy": "P1",
+      "epsilon_FWIT": 1512109.412187,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "FOPT": 478838.3535362522,
+      "FWIT": 1512109.412187,
+      "R": 420.0000000000802,
+      "capacity_requested": 421.59216394456513,
+      "maximum_absolute_audit_residual": 2.3283064365386963e-10,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.499999999999986,
+        "INJECT7": 59.5,
+        "INJECT8": 60.092163944565144
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 57.90783605551506,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.092163944565144
+      }
+    },
+    {
+      "policy": "P2",
+      "epsilon_FWIT": 1728051.611471,
+      "status": "optimal",
+      "solver_gap": 1.1838488192930185e-16,
+      "FOPT": 491681.5387646235,
+      "FWIT": 1728051.611471,
+      "R": 480.000000000031,
+      "capacity_requested": 485.48440359865333,
+      "maximum_absolute_audit_residual": 2.3283064365386963e-10,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.49999999999708,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.49999999999865,
+        "INJECT7": 70.98440359865685,
+        "INJECT8": 112.50000000000074
+      },
+      "realized": {
+        "INJECT1": 79.50000000000001,
+        "INJECT2": 34.5,
+        "INJECT3": 58.84785704607885,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.91011471064915,
+        "INJECT8": 107.74202824330297
+      }
+    },
+    {
+      "policy": "P3",
+      "epsilon_FWIT": 1943993.810755,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "FOPT": 501313.86435013375,
+      "FWIT": 1943993.810755,
+      "R": 539.9999999999818,
+      "capacity_requested": 549.6284360805055,
+      "maximum_absolute_audit_residual": 1.1641532182693481e-10,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 135.12843608050548,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.38940193176817,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 130.8506498483415,
+        "INJECT8": 107.25994821987211
+      }
+    },
+    {
+      "policy": "P4",
+      "epsilon_FWIT": 2159936.010039,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "FOPT": 509075.02524785785,
+      "FWIT": 2159936.010039,
+      "R": 599.9999999999327,
+      "capacity_requested": 617.587179939213,
+      "maximum_absolute_audit_residual": 4.656612873077393e-10,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 115.58717993921302,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.80494895576037,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 110.46606295138312,
+        "INJECT7": 141.97978968960444,
+        "INJECT8": 106.74919840318476
+      }
+    },
+    {
+      "policy": "P5",
+      "epsilon_FWIT": 2289501.32961,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "FOPT": 511016.7262163,
+      "FWIT": 2236508.4586840067,
+      "R": 621.2758179453373,
+      "capacity_requested": 636.0,
+      "maximum_absolute_audit_residual": 5.820766091346741e-11,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 128.58693909521168,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478831,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.25667993654223,
+        "INJECT2": 34.5,
+        "INJECT3": 127.00380304070129,
+        "INJECT4": 34.5,
+        "INJECT5": 34.50000000000015,
+        "INJECT6": 64.91306090478831,
+        "INJECT7": 141.99145880166728,
+        "INJECT8": 106.61081526163794
+      }
+    }
+  ]
+}

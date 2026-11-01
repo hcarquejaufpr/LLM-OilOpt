@@ -1,0 +1,87 @@
+{
+  "schema": "p2-v3-evidence-1",
+  "source": "shared/problema_p2_public.json",
+  "baseline": {
+    "command": "python B/public_tdd.py",
+    "result": "falhou antes da implementação: solve.py ausente"
+  },
+  "validation": {
+    "public_tdd": {
+      "command": "python B/public_tdd.py",
+      "result": "PUBLIC_TDD_V3_PASS"
+    },
+    "epsilon_sweep": {
+      "policies": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "result": "Todas as execuções retornaram status optimal e código 0; auditoria interna de clipping, FOPT, FWIT e capacidade passou",
+      "maximum_solver_gap": 2.5e-16
+    }
+  },
+  "requirements": {
+    "R01": {
+      "implementation": "solve.py: build() cria q para todos os poços a partir de fixed/domains",
+      "evidence": "B/public_tdd.py valida INJECT1 e domínios; cinco epsilons resolvidos"
+    },
+    "R02": {
+      "implementation": "solve.py: build() adiciona sum(q) <= capacity_requested",
+      "evidence": "B/public_tdd.py valida capacidade"
+    },
+    "R03": {
+      "implementation": "solve.py: build() define Q, own_i, real_i e Z por igualdades com fator 20",
+      "evidence": "B/public_tdd.py recompõe Q, real_i e Z indiretamente em clipping/FOPT/FWIT"
+    },
+    "R04": {
+      "implementation": "solve.py: build() lê layer1_deficit_models, incluindo own2 e Q2 de INJECT3",
+      "evidence": "B/public_tdd.py recompõe todos os déficits públicos"
+    },
+    "R05": {
+      "implementation": "solve.py: build() usa três binárias por poço e implicações Big-M; constantes em model.json",
+      "evidence": "B/public_tdd.py recompõe r=q-clip(d,0,q); auditoria interna repete a checagem para cada execução"
+    },
+    "R06": {
+      "implementation": "solve.py: pwl() usa pesos convexos e binárias de segmentos adjacentes sobre os nós públicos",
+      "evidence": "B/public_tdd.py interpola own2_INJECT3, Q2 e Z2 independentemente"
+    },
+    "R07": {
+      "implementation": "solve.py: build() define R=sum(r) e 20Z=R-600",
+      "evidence": "B/public_tdd.py compara R e recompõe Z"
+    },
+    "R08": {
+      "implementation": "solve.py: build() usa layer2.FOPT em real_i e Z2; layer2.FWIT em Z",
+      "evidence": "B/public_tdd.py recompõe FOPT público v3; auditoria interna recompõe FOPT/FWIT"
+    },
+    "R09": {
+      "implementation": "solve.py: main()/build() recebem --epsilon, impõem FWIT<=epsilon e minimizam -FOPT",
+      "evidence": "P1–P5 resolveram com status optimal, gap <= 2.5e-16; B/public_tdd.py valida epsilon P3"
+    },
+    "R10": {
+      "implementation": "solve.py: build() não acessa external_physical_validation nem cria restrição WBHP",
+      "evidence": "Inspeção de build(); model.json lista WBHP entre restrições ausentes"
+    },
+    "R11": {
+      "implementation": "formulacao.md, solve.py, model.json, evidence.json na raiz",
+      "evidence": "Arquivos entregues"
+    },
+    "R12": {
+      "implementation": "solve.py: argparse recebe --epsilon e --output; JSON inclui status, epsilon_FWIT, requested, realized, R, FOPT, FWIT, solver_gap e detalhes de auditoria",
+      "evidence": "B/public_tdd.py executou a CLI e validou o output"
+    },
+    "R13": {
+      "implementation": "evidence.json mapeia todos os requisitos R01–R15",
+      "evidence": "Validação JSON e das chaves no fechamento"
+    },
+    "R14": {
+      "implementation": "solve.py lê apenas o problema público; não contém soluções fixas nem acesso a OPM",
+      "evidence": "Inspeção de fonte; execução com os cinco epsilons públicos"
+    },
+    "R15": {
+      "implementation": "solve.py: d sem cotas; r com apenas 0<=r<=q derivado do clipping; deficit_bounds só alimenta constantes Big-M; realized_bounds não utilizado",
+      "evidence": "Inspeção de build() e model.json; nenhum limite auxiliar é adicionado como restrição"
+    }
+  }
+}

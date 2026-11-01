@@ -1,0 +1,72 @@
+{
+  "schema": "p2-public-v3-evidence",
+  "source": "shared/problema_p2_public.json",
+  "baseline": "python B/public_tdd.py failed before implementation: solve.py ausente",
+  "tests": {
+    "public_tdd": "python B/public_tdd.py -> PUBLIC_TDD_V3_PASS",
+    "five_epsilon_audit": "P1, P2, P3, P4, P5 -> AUDIT_PASS; all HiGHS optimal with reported gap 0.0; independent recomputation of features, clipping, PWL, FOPT, FWIT and epsilon from output JSON",
+    "model_matrix": "model.json serializes 185 variables and 189 constraints; final row upper bound is symbolic epsilon_FWIT"
+  },
+  "requirements": {
+    "R01": {
+      "implementation": "solve.py build(): q bounds from decision_variables.fixed/domains",
+      "evidence": "public_tdd and five_epsilon_audit; model.json q.* variable bounds"
+    },
+    "R02": {
+      "implementation": "solve.py build(): requested capacity row",
+      "evidence": "public_tdd; model.json sum(q)<=636 row"
+    },
+    "R03": {
+      "implementation": "solve.py build(): Q, own, real, Z equalities",
+      "evidence": "five_epsilon_audit independently recomputes all features"
+    },
+    "R04": {
+      "implementation": "solve.py build(): layer1_deficit_models loop",
+      "evidence": "five_epsilon_audit independently recomputes every deficit"
+    },
+    "R05": {
+      "implementation": "solve.py clipping(): three regimes and derived Big-M",
+      "evidence": "formulacao.md clipping derivation; public_tdd and five_epsilon_audit recompute exact clipping"
+    },
+    "R06": {
+      "implementation": "solve.py pwl(): lambda/segment adjacency with public nodes",
+      "evidence": "five_epsilon_audit independently interpolates own2_INJECT3, Q2, Z2; model.json pwl_public_nodes"
+    },
+    "R07": {
+      "implementation": "solve.py build(): R and Z equalities",
+      "evidence": "public_tdd and five_epsilon_audit recompute R, Z"
+    },
+    "R08": {
+      "implementation": "solve.py build(): layer2 FOPT and FWIT coefficient equations",
+      "evidence": "public_tdd FOPT check; five_epsilon_audit independently recomputes FOPT and FWIT"
+    },
+    "R09": {
+      "implementation": "solve.py build()/main(): maximize FOPT and FWIT<=--epsilon",
+      "evidence": "five_epsilon_audit all five public epsilon candidates optimal; model.json final parameter row"
+    },
+    "R10": {
+      "implementation": "solve.py build(): no WBHP terms or constraints",
+      "evidence": "model.json contains only requested, layer, clipping, PWL, objective and epsilon rows"
+    },
+    "R11": {
+      "implementation": "formulacao.md, solve.py, model.json, evidence.json",
+      "evidence": "four files present in /work"
+    },
+    "R12": {
+      "implementation": "solve.py argparse --epsilon and --output; JSON output with mandatory and audit fields",
+      "evidence": "public_tdd; five_epsilon_audit"
+    },
+    "R13": {
+      "implementation": "evidence.json requirements mapping",
+      "evidence": "R01-R12 and R13-R15 entries in this file"
+    },
+    "R14": {
+      "implementation": "all coefficients and nodes read from public problem; no reference solution/OPM input",
+      "evidence": "solve.py and model.json source hash"
+    },
+    "R15": {
+      "implementation": "solve.py clipping(): deficit_bounds only used for Big-M; realized_bounds never read; d and r have no explicit variable bounds",
+      "evidence": "model.json deficit.* and r.* bounds are null; formulacao.md proof"
+    }
+  }
+}

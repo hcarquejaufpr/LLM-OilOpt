@@ -1,0 +1,39 @@
+{
+  "schema": "p2-v3-condition-b-evidence",
+  "source": "shared/problema_p2_public.json",
+  "baseline": {
+    "command": "python3 B/public_tdd.py",
+    "result_before_implementation": "failed: solve.py ausente"
+  },
+  "verification": {
+    "syntax": "python3 -m py_compile solve.py: pass",
+    "public_tdd": "python3 B/public_tdd.py: PUBLIC_TDD_V3_PASS",
+    "all_public_epsilons": {
+      "method": "executed solve.py separately for P1-P5 using epsilon_FWIT from the public JSON; solve.py independently audited clipping, FOPT, FWIT and capacity on each run",
+      "statuses": {
+        "P1": "optimal; solver_gap=0.0",
+        "P2": "optimal; solver_gap=0.0",
+        "P3": "optimal; solver_gap=0.0",
+        "P4": "optimal; solver_gap=0.0",
+        "P5": "optimal; solver_gap=0.0"
+      }
+    }
+  },
+  "requirements": {
+    "R01": {"implementation": "solve.py:109-118; q variables read fixed/domains from public JSON", "evidence": "public_tdd; all_public_epsilons"},
+    "R02": {"implementation": "solve.py:125", "evidence": "public_tdd; audit capacity check"},
+    "R03": {"implementation": "solve.py:126-132", "evidence": "public_tdd; audit recomputation"},
+    "R04": {"implementation": "solve.py:135-146", "evidence": "public_tdd recomputes deficits from public coefficients"},
+    "R05": {"implementation": "solve.py:78-106; formulacao.md Big-M derivation; model.json clip.big_m_values", "evidence": "public_tdd checks exact clipping; audit checks all eight wells on all public epsilons"},
+    "R06": {"implementation": "solve.py:56-75, 133-135; adjacent-segment binary formulation using public nodes", "evidence": "public_tdd independently interpolates Q2, own2_INJECT3 and Z2"},
+    "R07": {"implementation": "solve.py:130-131", "evidence": "public_tdd checks R; audit recomputes Z"},
+    "R08": {"implementation": "solve.py:147-153", "evidence": "public_tdd independently recomputes FOPT with real_i; audit recomputes FOPT and FWIT"},
+    "R09": {"implementation": "solve.py:151-155, 207-210; negative FOPT minimization and CLI epsilon", "evidence": "all five public epsilons optimal; public_tdd checks epsilon"},
+    "R10": {"implementation": "solve.py build() contains no WBHP constraint", "evidence": "code inspection; formulacao.md"},
+    "R11": {"implementation": "formulacao.md, solve.py, model.json, evidence.json", "evidence": "all four files delivered at workspace root"},
+    "R12": {"implementation": "solve.py:201-233; output includes status, epsilon, requested, realized, deficit, R, FOPT, FWIT, solver_gap, regimes and audit residuals", "evidence": "public_tdd; all_public_epsilons"},
+    "R13": {"implementation": "evidence.json requirements map", "evidence": "R01-R12 and R13-R15 present"},
+    "R14": {"implementation": "solve.py reads only public JSON and uses no reference/OPM values", "evidence": "code inspection"},
+    "R15": {"implementation": "solve.py:115-116 declares d and r unbounded; deficit_bounds read only at line 145 and passed to clip Big-M calculation; realized_bounds never used as a constraint", "evidence": "code inspection; formulacao.md; model.json auxiliary_bounds_policy"}
+  }
+}

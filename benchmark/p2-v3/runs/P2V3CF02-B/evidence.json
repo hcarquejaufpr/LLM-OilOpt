@@ -1,0 +1,40 @@
+{
+  "schema": "p2-v3-condition-b-evidence-1",
+  "source": "shared/problema_p2_public.json",
+  "baseline": {
+    "command": "python3 B/public_tdd.py",
+    "before_implementation": "FAIL: AssertionError: solve.py ausente"
+  },
+  "verification": {
+    "public_tdd": {
+      "command": "python3 B/public_tdd.py",
+      "result": "PUBLIC_TDD_V3_PASS"
+    },
+    "all_public_epsilons": {
+      "method": "Run solve.py for P1-P5 and independently recompute each deficit, clipping, R, FOPT and FWIT from the public JSON and output; check capacity and epsilon.",
+      "policies": ["P1", "P2", "P3", "P4", "P5"],
+      "result": "PASS"
+    },
+    "auxiliary_bounds": {
+      "method": "Inspect built MILP variable bounds: each deficit variable has (-infinity,+infinity); each realized variable has only logical [0,max(q_i)] bounds.",
+      "result": "PASS"
+    }
+  },
+  "requirements": {
+    "R01": {"implementation": "solve.py build(): q bounds from decision_variables.fixed/domains; model.json decision_variables", "evidence": "public_tdd; all_public_epsilons"},
+    "R02": {"implementation": "solve.py build(): sum(q) <= capacity_requested", "evidence": "public_tdd; all_public_epsilons"},
+    "R03": {"implementation": "solve.py build(): exact linear equalities for Q, own_i, real_i, Z", "evidence": "public_tdd; all_public_epsilons"},
+    "R04": {"implementation": "solve.py build(): deficit equalities from layer1_deficit_models; absent coefficients omitted", "evidence": "public_tdd; all_public_epsilons"},
+    "R05": {"implementation": "solve.py add_clip(): three binary regimes, complete implication Big-M constants computed from deficit_bounds and q domains", "evidence": "public_tdd; all_public_epsilons; formulacao.md clipping derivation"},
+    "R06": {"implementation": "solve.py add_pwl(): exactly one adjacent public segment for each of own2_INJECT3, Q2 and Z2", "evidence": "public_tdd; all_public_epsilons; model.json pwl"},
+    "R07": {"implementation": "solve.py build(): R=sum(r_i), 20Z=R-600", "evidence": "public_tdd; all_public_epsilons"},
+    "R08": {"implementation": "solve.py build(): FOPT uses public coefficients times real_i plus Z2; FWIT uses public intercept and Z", "evidence": "public_tdd independent FOPT recomputation; all_public_epsilons"},
+    "R09": {"implementation": "solve.py build()/main(): maximize FOPT with FWIT<=--epsilon", "evidence": "all_public_epsilons optimal"},
+    "R10": {"implementation": "solve.py build(): no WBHP symbol or constraint", "evidence": "source inspection; model.json excluded"},
+    "R11": {"implementation": "formulacao.md, solve.py, model.json, evidence.json", "evidence": "all files delivered"},
+    "R12": {"implementation": "solve.py argparse --epsilon/--output and JSON audit fields", "evidence": "public_tdd; all_public_epsilons"},
+    "R13": {"implementation": "evidence.json maps R01-R12 and R13-R15", "evidence": "this file"},
+    "R14": {"implementation": "solve.py reads only public JSON and solves MILP; no reference or OPM values", "evidence": "source inspection"},
+    "R15": {"implementation": "solve.py add_clip() uses deficit_bounds only to derive M; deficit variable is unbounded; realized_bounds never used as feasibility bounds", "evidence": "auxiliary_bounds; formulacao.md"}
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "p2-v3-evidence",
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "command": "python3 solve.py --epsilon <valor> --output <arquivo.json>",
+  "solver": "SciPy milp / HiGHS",
+  "validation": "Independent evaluation of public equations and exact clipping from requested values; residuals are absolute in native units.",
+  "cases": [
+    {
+      "policy": "P1",
+      "epsilon_FWIT": 1512109.412187,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.500000000000014,
+        "INJECT7": 59.5,
+        "INJECT8": 60.09216394456517
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 57.907836055515034,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 59.5,
+        "INJECT8": 60.09216394456517
+      },
+      "R": 420.0000000000802,
+      "FOPT": 478838.3535362522,
+      "FWIT": 1512109.412187,
+      "requested_total": 421.5921639445652,
+      "max_absolute_residuals": {
+        "deficit": 8.881784197001252e-16,
+        "clipping": 2.1316282072803006e-14,
+        "R": 0.0,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 2.3283064365386963e-10
+      }
+    },
+    {
+      "policy": "P2",
+      "epsilon_FWIT": 1728051.611471,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.98440359866373,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 58.84785704607613,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 70.91011471065262,
+        "INJECT8": 107.74202824330224
+      },
+      "R": 480.000000000031,
+      "FOPT": 491681.5387646235,
+      "FWIT": 1728051.611471,
+      "requested_total": 485.48440359866373,
+      "max_absolute_residuals": {
+        "deficit": 8.881784197001252e-16,
+        "clipping": 1.4210854715202004e-14,
+        "R": 0.0,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 2.3283064365386963e-10
+      }
+    },
+    {
+      "policy": "P3",
+      "epsilon_FWIT": 1943993.810755,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.499999999955904,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.500000000015895,
+        "INJECT7": 135.1284360806202,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 79.50000000000033,
+        "INJECT2": 34.5,
+        "INJECT3": 59.38940193166142,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 59.5,
+        "INJECT7": 130.85064984844865,
+        "INJECT8": 107.25994821987146
+      },
+      "R": 539.9999999999818,
+      "FOPT": 501313.86435013404,
+      "FWIT": 1943993.810755,
+      "requested_total": 549.628436080592,
+      "max_absolute_residuals": {
+        "deficit": 6.289513354573728e-11,
+        "clipping": 6.289724296948407e-11,
+        "R": 7.855760486563668e-11,
+        "FOPT": 1.0419171303510666e-08,
+        "FWIT": 2.8265640139579773e-07
+      }
+    },
+    {
+      "policy": "P4",
+      "epsilon_FWIT": 2159936.010039,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 115.58717993921294,
+        "INJECT7": 147.0,
+        "INJECT8": 112.5
+      },
+      "realized": {
+        "INJECT1": 77.80494895576038,
+        "INJECT2": 34.5,
+        "INJECT3": 59.5,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 110.46606295138307,
+        "INJECT7": 141.97978968960442,
+        "INJECT8": 106.74919840318478
+      },
+      "R": 599.9999999999327,
+      "FOPT": 509075.02524785785,
+      "FWIT": 2159936.010039,
+      "requested_total": 617.587179939213,
+      "max_absolute_residuals": {
+        "deficit": 1.7763568394002505e-15,
+        "clipping": 2.842170943040401e-14,
+        "R": 0.0,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 4.656612873077393e-10
+      }
+    },
+    {
+      "policy": "P5",
+      "epsilon_FWIT": 2289501.32961,
+      "status": "optimal",
+      "solver_gap": 0.0,
+      "requested": {
+        "INJECT1": 79.5,
+        "INJECT2": 34.5,
+        "INJECT3": 128.5869390870506,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478825,
+        "INJECT7": 147.0,
+        "INJECT8": 112.50000000816114
+      },
+      "realized": {
+        "INJECT1": 77.25667993654223,
+        "INJECT2": 34.5,
+        "INJECT3": 127.00380303296295,
+        "INJECT4": 34.5,
+        "INJECT5": 34.5,
+        "INJECT6": 64.91306090478825,
+        "INJECT7": 141.99145880166728,
+        "INJECT8": 106.61081526879914
+      },
+      "R": 621.2758179447599,
+      "FOPT": 511016.72621632996,
+      "FWIT": 2236508.458681929,
+      "requested_total": 636.0,
+      "max_absolute_residuals": {
+        "deficit": 8.881784197001252e-16,
+        "clipping": 0.0,
+        "R": 0.0,
+        "FOPT": 5.820766091346741e-11,
+        "FWIT": 4.656612873077393e-10
+      }
+    }
+  ]
+}

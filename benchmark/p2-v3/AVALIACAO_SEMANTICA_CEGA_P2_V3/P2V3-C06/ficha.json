@@ -1,0 +1,164 @@
+{
+  "candidate_id": "P2V3-C06",
+  "semantic_pass": "PASS",
+  "semantic_failure_criteria": [],
+  "execution_pass": "PASS",
+  "numeric_reference_pass": "NOT_AVAILABLE",
+  "criteria": [
+    {
+      "id": "C01",
+      "decision": "PASS",
+      "evidence": "artefatos declaram as quatro camadas",
+      "observation": ""
+    },
+    {
+      "id": "C02",
+      "decision": "PASS",
+      "evidence": "INJECT1 e 79.5 presentes",
+      "observation": ""
+    },
+    {
+      "id": "C03",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C04",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C05",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C06",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C07",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C08",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C09",
+      "decision": "PASS",
+      "evidence": "clipping exato ou equivalente declarado",
+      "observation": ""
+    },
+    {
+      "id": "C10",
+      "decision": "PASS",
+      "evidence": "Big-M ausente ou vinculado a bounds auxiliares",
+      "observation": ""
+    },
+    {
+      "id": "C11",
+      "decision": "PASS",
+      "evidence": "PWL/SOS2 ou equivalente",
+      "observation": ""
+    },
+    {
+      "id": "C12",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C13",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C14",
+      "decision": "PASS",
+      "evidence": "objetivo declarado",
+      "observation": ""
+    },
+    {
+      "id": "C15",
+      "decision": "PASS",
+      "evidence": "validado pelo teste público P3",
+      "observation": ""
+    },
+    {
+      "id": "C16",
+      "decision": "PASS",
+      "evidence": "sem branches hard-coded por política",
+      "observation": ""
+    },
+    {
+      "id": "C17",
+      "decision": "PASS",
+      "evidence": "WBHP não aparece como constraint no código",
+      "observation": ""
+    },
+    {
+      "id": "C18",
+      "decision": "PASS",
+      "evidence": "sem valores de referência privados no código",
+      "observation": ""
+    },
+    {
+      "id": "C19",
+      "decision": "PASS",
+      "evidence": "sintaxe Python e interface --epsilon/--output",
+      "observation": ""
+    },
+    {
+      "id": "C20",
+      "decision": "PASS",
+      "evidence": "teste público P3 e interface nos cinco epsilons",
+      "observation": ""
+    },
+    {
+      "id": "C21",
+      "decision": "PASS",
+      "evidence": "formulação e implementação mencionam déficit",
+      "observation": ""
+    },
+    {
+      "id": "C22",
+      "decision": "PASS",
+      "evidence": "model.json parseável e descreve FOPT",
+      "observation": ""
+    },
+    {
+      "id": "C23",
+      "decision": "PASS",
+      "evidence": "evidence.json parseável",
+      "observation": ""
+    },
+    {
+      "id": "C24",
+      "decision": "PASS",
+      "evidence": "nenhuma imposição explícita de deficit_bounds detectada",
+      "observation": ""
+    },
+    {
+      "id": "C25",
+      "decision": "PASS",
+      "evidence": "nenhuma imposição explícita de realized_bounds detectada",
+      "observation": ""
+    }
+  ],
+  "auditability_observations": [
+    "PWL/SOS2 descrito por formulação equivalente ou terminologia alternativa.",
+    "Rastreabilidade da formulação para evidence.json é limitada.",
+    "Uso de Big-M exige revisão humana adicional da suficiência das constantes."
+  ]
+}

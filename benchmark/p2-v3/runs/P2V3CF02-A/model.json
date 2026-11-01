@@ -1,0 +1,49 @@
+{
+  "schema": "p2-v3-milp-implementation-1",
+  "source": "shared/problema_p2_public.json",
+  "implementation": "solve.py",
+  "solver": "scipy.optimize.milp / HiGHS",
+  "objective": {"sense": "maximize", "variable": "FOPT"},
+  "variables": {
+    "q_i": "requested flow; INJECT1 fixed, others use decision_variables.domains",
+    "r_i": "realized flow; logical bounds 0 <= r_i <= q_i",
+    "d_i": "deficit, defined by layer1_deficit_models; no deficit_bounds constraint",
+    "Q": "(sum(q)-600)/20",
+    "own_INJECT3": "(q_INJECT3-80)/20",
+    "Z": "(sum(r)-600)/20",
+    "PWL": ["own2_INJECT3", "Q2", "Z2"],
+    "FOPT": "public layer2 equation using real_i=(r_i-80)/20",
+    "FWIT": "public layer2 equation"
+  },
+  "pwl_formulation": {
+    "method": "adjacent-segment MILP equivalent to SOS2",
+    "lambda": "nonnegative weights summing to 1",
+    "segment": "binary selection of exactly one adjacent node pair",
+    "equations": ["x=sum(nodes_j*lambda_j)", "y=sum(values_j*lambda_j)", "lambda_j<=segment_(j-1)+segment_j (existing indices only)"]
+  },
+  "clip_formulation": {
+    "regimes": ["d<=0 and r=q", "0<=d<=q and r=q-d", "d>=q and r=0"],
+    "binary_sum": 1,
+    "big_m_symbols": {
+      "L,U": "deficit_bounds auxiliary endpoints; not constraints",
+      "l,u": "q domain endpoints",
+      "A": "max(U,0)",
+      "B": "max(-L,0)",
+      "C": "max(U-l,0)",
+      "D": "max(u-L,0)",
+      "E": "max(U,0)"
+    },
+    "inequalities": [
+      "d<=A*(1-a)", "r-q>=-u*(1-a)",
+      "-d<=B*(1-b)", "d-q<=C*(1-b)",
+      "r-q+d>=-D*(1-b)", "r-q+d<=E*(1-b)",
+      "q-d<=D*(1-c)", "r<=u*(1-c)"
+    ]
+  },
+  "constraints": ["q_1=79.5", "q_i in public domains", "sum(q)<=636", "FWIT<=epsilon_FWIT", "defining equations above"],
+  "auxiliary_bounds_policy": {
+    "deficit_bounds": "Big-M calculation only; never imposed on d_i",
+    "realized_bounds": "validation only; never imposed on r_i"
+  },
+  "WBHP": "external validation only; absent from MILP"
+}

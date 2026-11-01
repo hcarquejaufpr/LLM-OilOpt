@@ -1,0 +1,121 @@
+{
+  "schema": "p2-v3-milp-adjacent-segment",
+  "source": "shared/problema_p2_public.json",
+  "source_sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6",
+  "backend": "scipy.optimize.milp / HiGHS",
+  "objective": "maximize FOPT",
+  "parameter": "epsilon_FWIT",
+  "variables": 228,
+  "binary_variables": 79,
+  "linear_rows": 166,
+  "pwl_segments": {
+    "own2_INJECT3": 9,
+    "Q2": 22,
+    "Z2": 24
+  },
+  "clipping_regimes": [
+    "deficit<=0: r=q",
+    "0<=deficit<=q: r=q-deficit",
+    "deficit>=q: r=0"
+  ],
+  "big_m": {
+    "INJECT1": {
+      "L_aux": -4.158623832287001,
+      "U_aux": 2.243320164458,
+      "M_d_le_zero": 2.243320164458,
+      "M_d_ge_zero": 4.158623832287001,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 83.658623832287,
+      "M_r_eq_q": 79.5,
+      "M_r_ge_q_minus_d": 83.658623832287,
+      "M_r_le_q_minus_d": 2.243320164458,
+      "M_r_eq_zero": 79.5
+    },
+    "INJECT2": {
+      "L_aux": -1e-07,
+      "U_aux": 1e-07,
+      "M_d_le_zero": 1e-07,
+      "M_d_ge_zero": 1e-07,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 79.5000001,
+      "M_r_eq_q": 79.5,
+      "M_r_ge_q_minus_d": 79.5000001,
+      "M_r_le_q_minus_d": 1e-07,
+      "M_r_eq_zero": 79.5
+    },
+    "INJECT3": {
+      "L_aux": -0.22799959676,
+      "U_aux": 3.841545385355,
+      "M_d_le_zero": 3.841545385355,
+      "M_d_ge_zero": 0.22799959676,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 140.47799959676,
+      "M_r_eq_q": 140.25,
+      "M_r_ge_q_minus_d": 140.47799959676,
+      "M_r_le_q_minus_d": 3.841545385355,
+      "M_r_eq_zero": 140.25
+    },
+    "INJECT4": {
+      "L_aux": -1e-07,
+      "U_aux": 1e-07,
+      "M_d_le_zero": 1e-07,
+      "M_d_ge_zero": 1e-07,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 79.5000001,
+      "M_r_eq_q": 79.5,
+      "M_r_ge_q_minus_d": 79.5000001,
+      "M_r_le_q_minus_d": 1e-07,
+      "M_r_eq_zero": 79.5
+    },
+    "INJECT5": {
+      "L_aux": -1e-07,
+      "U_aux": 1e-07,
+      "M_d_le_zero": 1e-07,
+      "M_d_ge_zero": 1e-07,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 79.5000001,
+      "M_r_eq_q": 79.5,
+      "M_r_ge_q_minus_d": 79.5000001,
+      "M_r_le_q_minus_d": 1e-07,
+      "M_r_eq_zero": 79.5
+    },
+    "INJECT6": {
+      "L_aux": -2.5875215171029997,
+      "U_aux": 5.5829328382400005,
+      "M_d_le_zero": 5.5829328382400005,
+      "M_d_ge_zero": 2.5875215171029997,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 120.937521517103,
+      "M_r_eq_q": 118.35,
+      "M_r_ge_q_minus_d": 120.937521517103,
+      "M_r_le_q_minus_d": 5.5829328382400005,
+      "M_r_eq_zero": 118.35
+    },
+    "INJECT7": {
+      "L_aux": -0.7809764374989999,
+      "U_aux": 5.144797401615,
+      "M_d_le_zero": 5.144797401615,
+      "M_d_ge_zero": 0.7809764374989999,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 147.780976437499,
+      "M_r_eq_q": 147,
+      "M_r_ge_q_minus_d": 147.780976437499,
+      "M_r_le_q_minus_d": 5.144797401615,
+      "M_r_eq_zero": 147
+    },
+    "INJECT8": {
+      "L_aux": -2.2204481707759998,
+      "U_aux": 5.8891848393620005,
+      "M_d_le_zero": 5.8891848393620005,
+      "M_d_ge_zero": 2.2204481707759998,
+      "M_d_le_q": 0,
+      "M_d_ge_q": 114.720448170776,
+      "M_r_eq_q": 112.5,
+      "M_r_ge_q_minus_d": 114.720448170776,
+      "M_r_le_q_minus_d": 5.8891848393620005,
+      "M_r_eq_zero": 112.5
+    }
+  },
+  "auxiliary_bounds_are_constraints": false,
+  "WBHP_is_constraint": false
+}
