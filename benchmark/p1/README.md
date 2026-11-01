@@ -30,4 +30,4 @@ Source repository: `hcarquejaufpr/Pesquisa_Mestrado` (private), branch `main` at
 
 Original Git blob SHA: `e1acdb6b4f31034f5fef922cf22a24ecccd44d46`. Embedded `source_sha256` is preserved as supplied; its meaning should be checked against the original campaign manifest before a public release. The copy is only JSON pretty-printed, without changing field values.
 
-**Public release status:** not approved yet. Review source provenance, model/data redistribution rights, and the associated paper before changing visibility.
+This P1 input is retained for historical separation. It is not the P2 v3 benchmark or the source of the Revista Mundi article outcomes.

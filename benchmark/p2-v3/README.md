@@ -12,7 +12,7 @@ Physical validation aggregates are in `../../validation/p2-v3/`. These are post-
 
 ## Before the public release
 
-- Decide redistribution licenses with the authors; no license is granted by this preparation note.
+- The repository is released under MIT; third-party reservoir decks and papers are excluded.
 - Complete the reproduction environment and analysis entrypoints; this selection alone does not reproduce all paper claims end to end.
 - Reconcile the manuscript's E3 RMSE provenance before publishing associated development claims.
 - Review source-local paths retained in the C01 traceback; do not silently alter historical evidence.
