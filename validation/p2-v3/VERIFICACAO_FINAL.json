@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "checks_total": 44,
+  "checks_passed": 44,
+  "checks": [
+    {
+      "check": "P1: exit_code zero",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "P1: oito setpoints no schedule",
+      "passed": true,
+      "evidence": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        59.50000000000001,
+        60.0921639445651
+      ]
+    },
+    {
+      "check": "P1: schedule reproduz q v3",
+      "passed": true,
+      "evidence": {
+        "expected": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.5,
+          59.50000000000001,
+          60.0921639445651
+        ],
+        "observed": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.5,
+          59.50000000000001,
+          60.0921639445651
+        ]
+      }
+    },
+    {
+      "check": "P1: outputs obrigatorios manifestados",
+      "passed": true,
+      "evidence": [
+        "EGG_MODEL_ECL.DATA",
+        "EGG_MODEL_ECL.DBG",
+        "EGG_MODEL_ECL.EGRID",
+        "EGG_MODEL_ECL.ESMRY",
+        "EGG_MODEL_ECL.INIT",
+        "EGG_MODEL_ECL.PRT",
+        "EGG_MODEL_ECL.SMSPEC",
+        "EGG_MODEL_ECL.UNRST",
+        "EGG_MODEL_ECL.UNSMRY"
+      ]
+    },
+    {
+      "check": "P1: WBHP <= 420 BARSA",
+      "passed": true,
+      "evidence": 416.49066162109375
+    },
+    {
+      "check": "P1: horizonte 3600 dias",
+      "passed": true,
+      "evidence": 3600.0
+    },
+    {
+      "check": "P1: 120 report steps",
+      "passed": true,
+      "evidence": 120
+    },
+    {
+      "check": "P2: exit_code zero",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "P2: oito setpoints no schedule",
+      "passed": true,
+      "evidence": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.500000000000014,
+        70.98440359866375,
+        112.5
+      ]
+    },
+    {
+      "check": "P2: schedule reproduz q v3",
+      "passed": true,
+      "evidence": {
+        "expected": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.500000000000014,
+          70.98440359866375,
+          112.5
+        ],
+        "observed": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.500000000000014,
+          70.98440359866375,
+          112.5
+        ]
+      }
+    },
+    {
+      "check": "P2: outputs obrigatorios manifestados",
+      "passed": true,
+      "evidence": [
+        "EGG_MODEL_ECL.DATA",
+        "EGG_MODEL_ECL.DBG",
+        "EGG_MODEL_ECL.EGRID",
+        "EGG_MODEL_ECL.ESMRY",
+        "EGG_MODEL_ECL.INIT",
+        "EGG_MODEL_ECL.PRT",
+        "EGG_MODEL_ECL.SMSPEC",
+        "EGG_MODEL_ECL.UNRST",
+        "EGG_MODEL_ECL.UNSMRY"
+      ]
+    },
+    {
+      "check": "P2: WBHP <= 420 BARSA",
+      "passed": true,
+      "evidence": 420.0
+    },
+    {
+      "check": "P2: horizonte 3600 dias",
+      "passed": true,
+      "evidence": 3600.0
+    },
+    {
+      "check": "P2: 120 report steps",
+      "passed": true,
+      "evidence": 120
+    },
+    {
+      "check": "P3: exit_code zero",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "P3: oito setpoints no schedule",
+      "passed": true,
+      "evidence": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        135.12843608050545,
+        112.5
+      ]
+    },
+    {
+      "check": "P3: schedule reproduz q v3",
+      "passed": true,
+      "evidence": {
+        "expected": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.5,
+          135.12843608050545,
+          112.5
+        ],
+        "observed": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          59.5,
+          135.12843608050545,
+          112.5
+        ]
+      }
+    },
+    {
+      "check": "P3: outputs obrigatorios manifestados",
+      "passed": true,
+      "evidence": [
+        "EGG_MODEL_ECL.DATA",
+        "EGG_MODEL_ECL.DBG",
+        "EGG_MODEL_ECL.EGRID",
+        "EGG_MODEL_ECL.ESMRY",
+        "EGG_MODEL_ECL.INIT",
+        "EGG_MODEL_ECL.PRT",
+        "EGG_MODEL_ECL.SMSPEC",
+        "EGG_MODEL_ECL.UNRST",
+        "EGG_MODEL_ECL.UNSMRY"
+      ]
+    },
+    {
+      "check": "P3: WBHP <= 420 BARSA",
+      "passed": true,
+      "evidence": 420.0
+    },
+    {
+      "check": "P3: horizonte 3600 dias",
+      "passed": true,
+      "evidence": 3600.0
+    },
+    {
+      "check": "P3: 120 report steps",
+      "passed": true,
+      "evidence": 120
+    },
+    {
+      "check": "P4: exit_code zero",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "P4: oito setpoints no schedule",
+      "passed": true,
+      "evidence": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        115.58717993921569,
+        147.0,
+        112.5
+      ]
+    },
+    {
+      "check": "P4: schedule reproduz q v3",
+      "passed": true,
+      "evidence": {
+        "expected": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          115.58717993921569,
+          147.0,
+          112.5
+        ],
+        "observed": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          115.58717993921569,
+          147.0,
+          112.5
+        ]
+      }
+    },
+    {
+      "check": "P4: outputs obrigatorios manifestados",
+      "passed": true,
+      "evidence": [
+        "EGG_MODEL_ECL.DATA",
+        "EGG_MODEL_ECL.DBG",
+        "EGG_MODEL_ECL.EGRID",
+        "EGG_MODEL_ECL.ESMRY",
+        "EGG_MODEL_ECL.INIT",
+        "EGG_MODEL_ECL.PRT",
+        "EGG_MODEL_ECL.SMSPEC",
+        "EGG_MODEL_ECL.UNRST",
+        "EGG_MODEL_ECL.UNSMRY"
+      ]
+    },
+    {
+      "check": "P4: WBHP <= 420 BARSA",
+      "passed": true,
+      "evidence": 420.0
+    },
+    {
+      "check": "P4: horizonte 3600 dias",
+      "passed": true,
+      "evidence": 3600.0
+    },
+    {
+      "check": "P4: 120 report steps",
+      "passed": true,
+      "evidence": 120
+    },
+    {
+      "check": "P5: exit_code zero",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "P5: oito setpoints no schedule",
+      "passed": true,
+      "evidence": [
+        79.5,
+        34.5,
+        128.58693908705058,
+        34.5,
+        34.5,
+        64.91306090478824,
+        147.0,
+        112.50000000816117
+      ]
+    },
+    {
+      "check": "P5: schedule reproduz q v3",
+      "passed": true,
+      "evidence": {
+        "expected": [
+          79.5,
+          34.5,
+          128.58693908705058,
+          34.5,
+          34.5,
+          64.91306090478824,
+          147.0,
+          112.50000000816117
+        ],
+        "observed": [
+          79.5,
+          34.5,
+          128.58693908705058,
+          34.5,
+          34.5,
+          64.91306090478824,
+          147.0,
+          112.50000000816117
+        ]
+      }
+    },
+    {
+      "check": "P5: outputs obrigatorios manifestados",
+      "passed": true,
+      "evidence": [
+        "EGG_MODEL_ECL.DATA",
+        "EGG_MODEL_ECL.DBG",
+        "EGG_MODEL_ECL.EGRID",
+        "EGG_MODEL_ECL.ESMRY",
+        "EGG_MODEL_ECL.INIT",
+        "EGG_MODEL_ECL.PRT",
+        "EGG_MODEL_ECL.SMSPEC",
+        "EGG_MODEL_ECL.UNRST",
+        "EGG_MODEL_ECL.UNSMRY"
+      ]
+    },
+    {
+      "check": "P5: WBHP <= 420 BARSA",
+      "passed": true,
+      "evidence": 420.0
+    },
+    {
+      "check": "P5: horizonte 3600 dias",
+      "passed": true,
+      "evidence": 3600.0
+    },
+    {
+      "check": "P5: 120 report steps",
+      "passed": true,
+      "evidence": 120
+    },
+    {
+      "check": "metricas coincidem com recomputacao independente Fisher",
+      "passed": true,
+      "evidence": {
+        "expected": {
+          "FOPT_MAE": 3979.8364626356865,
+          "FOPT_RMSE": 5661.445400811384,
+          "FWIT_MAE": 12897.726861587586,
+          "FWIT_RMSE": 15563.647140018857
+        },
+        "actual": {
+          "FOPT_MAE": 3979.8364626356865,
+          "FOPT_RMSE": 5661.445400811384,
+          "FWIT_MAE": 12897.726861587586,
+          "FWIT_RMSE": 15563.647140018857
+        }
+      }
+    },
+    {
+      "check": "cinco politicas fisicamente consolidadas",
+      "passed": true,
+      "evidence": {
+        "completed": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "blocked": []
+      }
+    },
+    {
+      "check": "ranking FOPT P1-P5 preservado",
+      "passed": true,
+      "evidence": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    {
+      "check": "ranking FWIT P1-P5 preservado",
+      "passed": true,
+      "evidence": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    {
+      "check": "P3 menor que P4 menor que P5 em FOPT e FWIT",
+      "passed": true,
+      "evidence": {
+        "FOPT": true,
+        "FWIT": true
+      }
+    },
+    {
+      "check": "trade-off P1-P5 completo e nao dominado",
+      "passed": true,
+      "evidence": {
+        "nondominated_policies": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "all_five_nondominated": true,
+        "adjacent_OPM_deltas": [
+          {
+            "from": "P1",
+            "to": "P2",
+            "delta_FOPT_OPM_sm3": 7805.6875,
+            "delta_FWIT_OPM_sm3": 226353.0,
+            "marginal_FOPT_per_FWIT": 0.03448457718696019
+          },
+          {
+            "from": "P2",
+            "to": "P3",
+            "delta_FOPT_OPM_sm3": 5496.03125,
+            "delta_FWIT_OPM_sm3": 202188.0,
+            "marginal_FOPT_per_FWIT": 0.027182776673195245
+          },
+          {
+            "from": "P3",
+            "to": "P4",
+            "delta_FOPT_OPM_sm3": 5928.03125,
+            "delta_FWIT_OPM_sm3": 200262.75,
+            "marginal_FOPT_per_FWIT": 0.029601267584710586
+          },
+          {
+            "from": "P4",
+            "to": "P5",
+            "delta_FOPT_OPM_sm3": 819.4375,
+            "delta_FWIT_OPM_sm3": 62815.0,
+            "marginal_FOPT_per_FWIT": 0.013045251930271432
+          }
+        ],
+        "assessment": "PRESERVED"
+      }
+    },
+    {
+      "check": "P4 historico preservado e P4 v3 autorizado separadamente",
+      "passed": true,
+      "evidence": {
+        "blocked": "BLOCKED_NOT_EXECUTED",
+        "official_q": [
+          79.5,
+          34.5,
+          59.5,
+          34.5,
+          34.5,
+          115.58717993921569,
+          147.0,
+          112.5
+        ]
+      }
+    },
+    {
+      "check": "arvore congelada P2 v3 inalterada vs 665ec2c",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "validacao historica inalterada",
+      "passed": true,
+      "evidence": 0
+    }
+  ]
+}

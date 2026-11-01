@@ -1,0 +1,39 @@
+{
+  "schema": "p2-v3-blind-semantic-evaluation-v1",
+  "candidate_count": 16,
+  "semantic_pass_count": 15,
+  "semantic_fail_count": 1,
+  "pass_candidate_ids": [
+    "P2V3-C02",
+    "P2V3-C03",
+    "P2V3-C04",
+    "P2V3-C05",
+    "P2V3-C06",
+    "P2V3-C07",
+    "P2V3-C08",
+    "P2V3-C09",
+    "P2V3-C10",
+    "P2V3-C11",
+    "P2V3-C12",
+    "P2V3-C13",
+    "P2V3-C14",
+    "P2V3-C15",
+    "P2V3-C16"
+  ],
+  "failures": [
+    {
+      "candidate_id": "P2V3-C01",
+      "criteria": [
+        "C20"
+      ]
+    }
+  ],
+  "numeric_reference_used": false,
+  "private_evaluations_used": false,
+  "condition_map_opened": false,
+  "condition_comparison_performed": false,
+  "fisher_called": false,
+  "opm_called": false,
+  "package_manifest_sha256": "768c8e5a3fec62f1a89205e4bbf7bc7602ae22f13a64bd7eea4ec3949f168e4d",
+  "rubric_sha256": "61bb3590efb62eb374a91b9aeb2d99ac507ea6966485acca902cff6554137caa"
+}

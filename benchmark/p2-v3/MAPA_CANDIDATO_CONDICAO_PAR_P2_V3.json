@@ -1,0 +1,92 @@
+{
+  "schema": "p2-v3-unblinding-map-v1",
+  "private_map_sha256": "52cdf03fe111664ce3913066a16f4d1027bc2ad885a744be59d7632e2e42369e",
+  "private_map_commitment_verified": true,
+  "candidate_count": 16,
+  "mapping": [
+    {
+      "candidate_id": "P2V3-C01",
+      "condition": "A",
+      "pair_id": "CF02"
+    },
+    {
+      "candidate_id": "P2V3-C02",
+      "condition": "B",
+      "pair_id": "CF05"
+    },
+    {
+      "candidate_id": "P2V3-C03",
+      "condition": "B",
+      "pair_id": "CF07"
+    },
+    {
+      "candidate_id": "P2V3-C04",
+      "condition": "A",
+      "pair_id": "CF07"
+    },
+    {
+      "candidate_id": "P2V3-C05",
+      "condition": "B",
+      "pair_id": "CF02"
+    },
+    {
+      "candidate_id": "P2V3-C06",
+      "condition": "A",
+      "pair_id": "CF05"
+    },
+    {
+      "candidate_id": "P2V3-C07",
+      "condition": "B",
+      "pair_id": "CF03"
+    },
+    {
+      "candidate_id": "P2V3-C08",
+      "condition": "B",
+      "pair_id": "CF06"
+    },
+    {
+      "candidate_id": "P2V3-C09",
+      "condition": "A",
+      "pair_id": "CF04"
+    },
+    {
+      "candidate_id": "P2V3-C10",
+      "condition": "A",
+      "pair_id": "CF06"
+    },
+    {
+      "candidate_id": "P2V3-C11",
+      "condition": "A",
+      "pair_id": "CF08"
+    },
+    {
+      "candidate_id": "P2V3-C12",
+      "condition": "B",
+      "pair_id": "CF01"
+    },
+    {
+      "candidate_id": "P2V3-C13",
+      "condition": "A",
+      "pair_id": "CF01"
+    },
+    {
+      "candidate_id": "P2V3-C14",
+      "condition": "A",
+      "pair_id": "CF03"
+    },
+    {
+      "candidate_id": "P2V3-C15",
+      "condition": "B",
+      "pair_id": "CF08"
+    },
+    {
+      "candidate_id": "P2V3-C16",
+      "condition": "B",
+      "pair_id": "CF04"
+    }
+  ],
+  "m1_m4_started": false,
+  "fisher_called": false,
+  "opm_called": false,
+  "condition_comparison_performed": false
+}

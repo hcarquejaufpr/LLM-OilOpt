@@ -1,0 +1,349 @@
+{
+  "scope": {
+    "completed": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "blocked": [],
+    "metric_scope": "n=5 policies; physical validation completed for P1-P5"
+  },
+  "policies": [
+    {
+      "policy": "P1",
+      "status": "COMPLETED",
+      "q_requested": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        59.50000000000001,
+        60.0921639445651
+      ],
+      "r_predicted": [
+        79.5,
+        34.5,
+        57.90783605551501,
+        34.5,
+        34.5,
+        59.5,
+        59.50000000000001,
+        60.0921639445651
+      ],
+      "r_opm_mean": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        59.5,
+        60.0921630859375
+      ],
+      "FOPT_predicted": 478838.3535362523,
+      "FOPT_OPM": 489812.71875,
+      "FOPT_error_OPM_minus_predicted": 10974.365213747718,
+      "FWIT_predicted": 1512109.412187,
+      "FWIT_OPM": 1517727.5,
+      "FWIT_error_OPM_minus_predicted": 5618.087812999962,
+      "R_predicted": 420.00000000008015,
+      "R_OPM_well_mean": 421.5921630859375,
+      "R_OPM_FWIT_over_horizon": 421.5909722222222
+    },
+    {
+      "policy": "P2",
+      "status": "COMPLETED",
+      "q_requested": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.500000000000014,
+        70.98440359866375,
+        112.5
+      ],
+      "r_predicted": [
+        79.5,
+        34.5,
+        58.84785704607612,
+        34.5,
+        34.5,
+        59.500000000000014,
+        70.91011471065262,
+        107.74202824330224
+      ],
+      "r_opm_mean": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        70.98440551757812,
+        111.49919217427572
+      ],
+      "FOPT_predicted": 491681.5387646236,
+      "FOPT_OPM": 497618.40625,
+      "FOPT_error_OPM_minus_predicted": 5936.867485376424,
+      "FWIT_predicted": 1728051.6114710001,
+      "FWIT_OPM": 1744080.5,
+      "FWIT_error_OPM_minus_predicted": 16028.888528999873,
+      "R_predicted": 480.000000000031,
+      "R_OPM_well_mean": 484.48359769185384,
+      "R_OPM_FWIT_over_horizon": 484.46680555555554
+    },
+    {
+      "policy": "P3",
+      "status": "COMPLETED",
+      "q_requested": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        135.12843608050545,
+        112.5
+      ],
+      "r_predicted": [
+        79.5,
+        34.5,
+        59.38940193176818,
+        34.5,
+        34.5,
+        59.5,
+        130.85064984834145,
+        107.25994821987211
+      ],
+      "r_opm_mean": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        59.5,
+        131.25673611958823,
+        107.4769847869873
+      ],
+      "FOPT_predicted": 501313.86435013387,
+      "FOPT_OPM": 503114.4375,
+      "FOPT_error_OPM_minus_predicted": 1800.5731498661335,
+      "FWIT_predicted": 1943993.810755,
+      "FWIT_OPM": 1946268.5,
+      "FWIT_error_OPM_minus_predicted": 2274.689245000016,
+      "R_predicted": 539.9999999999818,
+      "R_OPM_well_mean": 540.7337209065755,
+      "R_OPM_FWIT_over_horizon": 540.6301388888888
+    },
+    {
+      "policy": "P4",
+      "status": "COMPLETED",
+      "q_requested": [
+        79.5,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        115.58717993921569,
+        147.0,
+        112.5
+      ],
+      "r_predicted": [
+        77.80494895576031,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        110.46606295138552,
+        141.97978968960444,
+        106.74919840318475
+      ],
+      "r_opm_mean": [
+        79.07180868784586,
+        34.5,
+        59.5,
+        34.5,
+        34.5,
+        112.06602102915446,
+        136.5657886505127,
+        105.7676264444987
+      ],
+      "FOPT_predicted": 509075.02524785814,
+      "FOPT_OPM": 509042.46875,
+      "FOPT_error_OPM_minus_predicted": -32.556497858138755,
+      "FWIT_predicted": 2159936.0100390087,
+      "FWIT_OPM": 2146531.25,
+      "FWIT_error_OPM_minus_predicted": -13404.760039008688,
+      "R_predicted": 599.9999999999351,
+      "R_OPM_well_mean": 596.4712448120117,
+      "R_OPM_FWIT_over_horizon": 596.2586805555555
+    },
+    {
+      "policy": "P5",
+      "status": "COMPLETED",
+      "q_requested": [
+        79.5,
+        34.5,
+        128.58693908705058,
+        34.5,
+        34.5,
+        64.91306090478824,
+        147.0,
+        112.50000000816117
+      ],
+      "r_predicted": [
+        77.25667993654223,
+        34.5,
+        127.00380303296292,
+        34.5,
+        34.5,
+        64.91306090478824,
+        141.99145880166728,
+        106.61081526879916
+      ],
+      "r_opm_mean": [
+        77.55546038945516,
+        34.5,
+        126.88078441619874,
+        34.5,
+        34.5,
+        64.9130630493164,
+        135.89661712646483,
+        105.17499465942383
+      ],
+      "FOPT_predicted": 511016.72621633,
+      "FOPT_OPM": 509861.90625,
+      "FOPT_error_OPM_minus_predicted": -1154.8199663300184,
+      "FWIT_predicted": 2236508.4586819294,
+      "FWIT_OPM": 2209346.25,
+      "FWIT_error_OPM_minus_predicted": -27162.20868192939,
+      "R_predicted": 621.2758179447599,
+      "R_OPM_well_mean": 613.920919640859,
+      "R_OPM_FWIT_over_horizon": 613.7072916666667
+    }
+  ],
+  "metrics_P1_P5": {
+    "FOPT_sm3": {
+      "n": 5,
+      "bias": 3504.885876960424,
+      "MAE": 3979.8364626356865,
+      "RMSE": 5661.445400811384,
+      "max_abs": 10974.365213747718
+    },
+    "FWIT_sm3": {
+      "n": 5,
+      "bias": -3329.0606267876456,
+      "MAE": 12897.726861587586,
+      "RMSE": 15563.647140018857,
+      "max_abs": 27162.20868192939
+    },
+    "R_total_OPM_minus_predicted_sm3_day": {
+      "n": 5,
+      "bias": -0.8148343615100657,
+      "MAE": 3.5386270352196334,
+      "RMSE": 4.236097736357813,
+      "max_abs": 7.354898303900882
+    },
+    "r_well_OPM_minus_predicted_sm3_day": {
+      "n": 40,
+      "bias": -0.10185429518875377,
+      "MAE": 0.6006084426986147,
+      "RMSE": 1.508799925855832,
+      "max_abs": 6.094841675202446
+    },
+    "q_delivery_OPM_minus_requested_sm3_day": {
+      "n": 40,
+      "bias": -1.3272634356428108,
+      "MAE": 1.3272636388149381,
+      "RMSE": 3.129036990117911,
+      "max_abs": 11.103382873535168
+    }
+  },
+  "ranking_P1_P5": {
+    "FOPT_predicted": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "FOPT_OPM": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "FOPT_preserved": true,
+    "FWIT_predicted": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "FWIT_OPM": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "FWIT_preserved": true,
+    "P3_lt_P4_lt_P5_FOPT": true,
+    "P3_lt_P4_lt_P5_FWIT": true
+  },
+  "tradeoff_P1_P5": {
+    "nondominated_policies": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "all_five_nondominated": true,
+    "adjacent_OPM_deltas": [
+      {
+        "from": "P1",
+        "to": "P2",
+        "delta_FOPT_OPM_sm3": 7805.6875,
+        "delta_FWIT_OPM_sm3": 226353.0,
+        "marginal_FOPT_per_FWIT": 0.03448457718696019
+      },
+      {
+        "from": "P2",
+        "to": "P3",
+        "delta_FOPT_OPM_sm3": 5496.03125,
+        "delta_FWIT_OPM_sm3": 202188.0,
+        "marginal_FOPT_per_FWIT": 0.027182776673195245
+      },
+      {
+        "from": "P3",
+        "to": "P4",
+        "delta_FOPT_OPM_sm3": 5928.03125,
+        "delta_FWIT_OPM_sm3": 200262.75,
+        "marginal_FOPT_per_FWIT": 0.029601267584710586
+      },
+      {
+        "from": "P4",
+        "to": "P5",
+        "delta_FOPT_OPM_sm3": 819.4375,
+        "delta_FWIT_OPM_sm3": 62815.0,
+        "marginal_FOPT_per_FWIT": 0.013045251930271432
+      }
+    ],
+    "assessment": "PRESERVED"
+  },
+  "traceability": {
+    "reference": "05_Experimentos_LLM/P2_V3_20261023/evaluator_private/REFERENCIA_P2_PRIVADA_V3.json",
+    "reference_sha256": "bc3892927da9d3b44e46a72933e38b40a57df7fdf986bf464699eaa886a4ed39",
+    "P4_historical_block": "P4_BLOQUEIO.json",
+    "P4_execution_authorization": "P4_EXECUCAO_AUTORIZADA.json",
+    "P4_official_result": "execucoes/P4/RESULTADO_OPM.json"
+  }
+}

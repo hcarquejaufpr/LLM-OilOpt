@@ -1,0 +1,82 @@
+[
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/shared/problema_p2_public.json",
+    "file": "benchmark/p2-v3/shared/problema_p2_public.json",
+    "sha256": "2cae56516db45e8e17778371d69b1ff41e63ec9b23cd46ba1133157a51fa72e6"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/FORMULACAO_MATEMATICA_V3.md",
+    "file": "benchmark/p2-v3/FORMULACAO_MATEMATICA_V3.md",
+    "sha256": "0f91b732acb1487451191d49e1bf576936ab592bfef5b1320c32527afa7ec0f7"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/CONTRATO_ENTREGA.md",
+    "file": "benchmark/p2-v3/CONTRATO_ENTREGA.md",
+    "sha256": "d24b6e4ac42752c1173994b6de3c6efaec53b2311d993e3e3b7272a1c1ce9ee7"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/SDD_CONDICAO_B.md",
+    "file": "benchmark/p2-v3/SDD_CONDICAO_B.md",
+    "sha256": "9e70a0657389e36b09a440cdaa3293d2c4ebe2df263aecd607be6658d901d288"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/TDD_CONDICAO_B.md",
+    "file": "benchmark/p2-v3/TDD_CONDICAO_B.md",
+    "sha256": "10f21a5b951a395f0e6b6f22e87dae08849de0bd278b4abb614a1ea4d1959956"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/B/public_tdd.py",
+    "file": "benchmark/p2-v3/B/public_tdd.py",
+    "sha256": "86e939295f315461c6deca39c64829793c6bc3397ca3153b6a5b0614f7614275"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/RUBRICA_SEMANTICA_P2_V3.md",
+    "file": "benchmark/p2-v3/RUBRICA_SEMANTICA_P2_V3.md",
+    "sha256": "61bb3590efb62eb374a91b9aeb2d99ac507ea6966485acca902cff6554137caa"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/evaluator_private/RESOLVER_REFERENCIA_V3.py",
+    "file": "benchmark/p2-v3/evaluator_private/RESOLVER_REFERENCIA_V3.py",
+    "sha256": "fdbcfe8c1c25eef1da73fef306448cf98a5f4d0cdcc2e41564fe044035f33593"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/evaluator_private/REFERENCIA_P2_PRIVADA_V3.json",
+    "file": "benchmark/p2-v3/evaluator_private/REFERENCIA_P2_PRIVADA_V3.json",
+    "sha256": "bc3892927da9d3b44e46a72933e38b40a57df7fdf986bf464699eaa886a4ed39"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/ANALISE_M1_M4_P2_V3/RESULTADOS_M1_M4_P2_V3.json",
+    "file": "benchmark/p2-v3/ANALISE_M1_M4_P2_V3/RESULTADOS_M1_M4_P2_V3.json",
+    "sha256": "d46a582a8ab81c180a3ed90e756cc4389ccaac10a1b3e7a27764d67e2c1e81fc"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/MAPA_CANDIDATO_CONDICAO_PAR_P2_V3.json",
+    "file": "benchmark/p2-v3/MAPA_CANDIDATO_CONDICAO_PAR_P2_V3.json",
+    "sha256": "6dfb882ceeef82a7e576cba1fed236dfe27d841a73f1db6bc3d81d44d0737509"
+  },
+  {
+    "source": "05_Experimentos_LLM/P2_V3_20261023/AVALIACAO_SEMANTICA_CEGA_P2_V3/CONSOLIDADO_AVALIACAO_SEMANTICA_CEGA_P2_V3.json",
+    "file": "benchmark/p2-v3/AVALIACAO_SEMANTICA_CEGA_P2_V3/CONSOLIDADO_AVALIACAO_SEMANTICA_CEGA_P2_V3.json",
+    "sha256": "6dff9fc3ed9045eaaf8a34f1e16c953ad473a2f293ea385f7d4494bf3c6020ee"
+  },
+  {
+    "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/RESULTADOS_CONSOLIDADOS.json",
+    "file": "validation/p2-v3/RESULTADOS_CONSOLIDADOS.json",
+    "sha256": "30f101d23058f303d950080b3a2bc7c9586064ca048b495aa9b74b50b7400202"
+  },
+  {
+    "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/TABELA_POLITICAS.csv",
+    "file": "validation/p2-v3/TABELA_POLITICAS.csv",
+    "sha256": "65efdebf1d8947cc47d480009a929d763e54f46a63017f18bffd2517d4643277"
+  },
+  {
+    "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/TABELA_VAZOES.csv",
+    "file": "validation/p2-v3/TABELA_VAZOES.csv",
+    "sha256": "009285890ffe019b6b56973d9a7f9acfd4a8857cf84e782164579f1a134e73fb"
+  },
+  {
+    "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/VERIFICACAO_FINAL.json",
+    "file": "validation/p2-v3/VERIFICACAO_FINAL.json",
+    "sha256": "3f8ced85917781ca65e6b57dd58ab13484f3f87bf90367fcb6ecadcf65beeb0e"
+  }
+]
