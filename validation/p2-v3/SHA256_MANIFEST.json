@@ -573,5 +573,15 @@
     "source": "03_Modelo_Reduzido/P2_ARTIGO_20261022/VALIDACAO_FISICA_POS_OTIMIZACAO_P2_V3_20261025/VERIFICACAO_FINAL.json",
     "file": "validation/p2-v3/VERIFICACAO_FINAL.json",
     "sha256": "3f8ced85917781ca65e6b57dd58ab13484f3f87bf90367fcb6ecadcf65beeb0e"
+  },
+  {
+    "source": "derived in publication release from ANALISE_M1_M4_P2_V3/RESULTADOS_M1_M4_P2_V3.json",
+    "file": "benchmark/p2-v3/ANALISE_M1_M4_P2_V3/M1_BLOCK_AUDIT.csv",
+    "sha256": "80b3594bcfeda59a18ec8a447e7aa50dd1b0522527809bf24a16164c7613ebdc"
+  },
+  {
+    "source": "derived in publication release from ANALISE_M1_M4_P2_V3/RESULTADOS_M1_M4_P2_V3.json",
+    "file": "benchmark/p2-v3/ANALISE_M1_M4_P2_V3/audit_m1_mcnemar.py",
+    "sha256": "b0124e4b947f5350b2d3ec8a3d44b7a06f7d5d7978443d8425de950aa4248433"
   }
 ]

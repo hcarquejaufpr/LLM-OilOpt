@@ -4,11 +4,11 @@
     {"name": "Scarpin, Cassius Tadeu", "affiliation": "Universidade Federal do Paraná"}
   ],
   "title": "LLM-OilOpt P2 v3 benchmark and evidence for paired oilfield optimization formulation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "access_right": "open",
   "license": "mit",
   "upload_type": "software",
   "language": "eng",
   "keywords": ["mathematical optimization", "large language models", "mixed-integer linear programming", "oilfield optimization", "reproducibility"],
-  "description": "Frozen P2 v3 benchmark with public problem data, a reference MILP/PWL/SOS2 solver, structured SDD/TDD materials, selected artifacts from eight paired blocks (16 LLM sessions), blinded semantic evaluation records, M1-M4 aggregates and independent post-campaign OPM Flow validation summaries. P1 materials in the repository are historical and separate. M1 observed A 7/8 and B 8/8 valid formulations; exact McNemar p=1.0. The observation does not establish statistical superiority."
+  "description": "Frozen P2 v3 benchmark with public problem data, a reference MILP/PWL/SOS2 solver, structured SDD/TDD materials, selected artifacts from eight paired blocks (16 LLM sessions), blinded semantic evaluation records, an explicit PASS/FAIL table for all eight M1 pairs and a dependency-free script to reproduce the exact McNemar test, M1-M4 aggregates and independent post-campaign OPM Flow validation summaries. P1 materials in the repository are historical and separate. M1 observed A 7/8 and B 8/8 valid formulations; exact McNemar p=1.0. The observation does not establish statistical superiority."
 }
